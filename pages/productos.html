@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles.css">
+        <title>Lo que Ofrecemos</title>
+    </head>
+    <body>
+        <header id="Cabecera">
+            <nav id="BarraNav">
+                <div class="BarraNav_div">
+                    <div class="M_logo">
+                        <img class="img_logo" src="../images/logo-sinfondo.png" alt="Logo Principal"/>
+                    </div>
+                    <div class="M_inicio">
+                        <div><img src="../icons/inicio-sinfondo.png" alt=""/></div>
+                        <li><a href="../index.html">Inicio</a></li>
+                    </div>
+                    <div class="M_Somos">
+                        <div><img src="../icons/somos-sinfondo.png" alt=""/></div>
+                        <li><a href="../pages/quiensomos.html" target="_blank">Quién Somos?</a></li>
+                    </div>
+                    <div class="M_Normas">
+                        <div><img src="../icons/normas-sinfondo.png" alt=""/></div> 
+                        <li><a href="../pages/normativa.html" target="_blank">Normativa</a></li>
+                    </div>
+                    <div class="M_productos">
+                        <div><img src="../icons/productos-sinfondo.png" alt=""/></div>
+                        <li><a href="../pages/productos.html" target="_blank">Lo que Ofrecemos</a></li>
+                    </div>
+                    <div class="M_Saldos">    
+                        <div><img src="../icons/saldos-sinfondo.png" alt=""/></div>
+                        <li><a href="../pages/tussaldos.html" target="_blank">Tus Saldos</a></li>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main id="main">
+            <div class="title_cuerpo">
+                <div><img src="../icons/productos-sinfondo.png" alt=""/></div>
+                <div><h2>Lo que Ofrecemos</h2></div>
+            </div>
+            <div class="principal">
+                <section id="productos">
+                    <div class="aportes">
+                        <div class="aport1">
+                            <label class="Label1" for="Tp_ahorros">Tipo de Ahorros</label>
+                            <select name="Tp_ahorros">
+                                <option value="">Seleccione el Tipo de Ahorro</option>
+                                <option value="Aporte y horro Permanente">Aportes y Ahorros</option>
+                                <option value="Ahorro Programado">Ahorro Programado</option>
+                                <option value="Ahorro con Destinación">Ahorro con Destinación</option>
+                            </select>                            
+                        </div>
+                        
+                        <br>
+                        <input class="descrip1" type="text" id="descrip1" name="descrip1" readonly/>
+                        
+                        <div class="aport1">
+                            <br>
+                            <br>
+                            <label class="Label2" for="vrmahorro">Valor Mensual de Ahorro:</label>
+                            <input class="vrmahorro" type="number" id="Cuotaho" name="Cuotaho"/>
+                        </div>   
+                        <div class="aport1">
+                            <label class="Label2" for="tasahomes">Tasa Rendimiento Mensual:</label>
+                            <input class="tasahomes" type="number" id="Tasaho" name="Tasaho" readonly/>
+                        </div>
+                        
+                        <div class="aport1">
+                            <br>
+                            <br>
+                            <form action=""></form>
+                                <button class="button2">Proyectar</button>
+                                <h5>Esta proyección se genera en PDF.</h5>
+                            </form>                            
+                        </div>
+                        
+                        <div class="aport1">
+                            <br>
+                            <br>
+                            <label class="Label1" for="form_ahorros">Descargar Formatos</label>
+                            <select name="form_ahorros">
+                                <option value="">Seleccione el Formato de Ahorro</option>
+                                <option value="Solicitud Aporte y horro Permanente">Solicitud Aportes y Ahorros</option>
+                                <option value="Solicitud Ahorro Programado">Solicitud Ahorro Programado</option>
+                                <option value="Solicitud Ahorro con Destinación">Solicitud Ahorro con Destinación</option>
+                            </select>                            
+                            <form action=""></form>
+                                <button class="button2">Descargar</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="creditos">
+                        <div class="aport1">
+                            <label class="Label1" for="Tp_ahorros">Tipo de Credito</label>
+                            <select name="Tp_creditos">
+                                <option value="">Seleccione el Tipo de Créditos</option>
+                                <option value="Libre Inversión">Libre Inversión</option>
+                                <option value="Educación">Educación</option>
+                                <option value="Emergencias">Emergencias</option>
+                                <option value="Electródomesticos">Electródomesticos</option>
+                                <option value="Impuestos">Impuestos</option>
+                                <option value="Vehiculo">Vehiculo</option>
+                                <option value="Vivienda">Vivienda</option>
+                            </select>
+                        </div>
+                        
+                        <br>
+                        <input class="descrip1" type="text" id="descrip2" name="descrip2" readonly/>
+
+                        <div class="aport1">
+                            <br>
+                            <br>
+                            <label class="Label2" for="vrcredito">Valor del Credito:</label>
+                            <input class="vrcredito" type="number" id="vrcred" name="vrcred"/>
+                        </div>   
+                        <div class="aport1">
+                            <label class="Label2" for="numcuotas">Numero de Cuotas:</label>
+                            <input class="numcuotas" type="number" id="plazo" name="plazo"/>
+                        </div>
+                        <div class="aport1">
+                            <label class="Label2" for="tasaint">Tasa Interes Mensual:</label>
+                            <input class="tasaint" type="number" id="tasam" name="tasam"/>
+                        </div>
+
+                        <div class="aport1">
+                            <br>
+                            <br>
+                            <form action=""></form>
+                                <button class="button2">Proyectar</button>
+                                <h5>Esta proyección se genera en PDF.</h5>
+                            </form>                            
+                        </div>
+                        
+                        <div class="aport1">
+                            <br>
+                            <br>
+                            <label class="Label1" for="form_creditos">Descargar Formatos</label>
+                            <select name="form_creditos">
+                                <option value="">Seleccione el Formatos de crédito</option>
+                                <option value="Solicitud de Crédito">Solicitud de Crédito</option>
+                                <option value="Pagaré">Pagaré</option>
+                                <option value="Carta de Instrucciones">Carta de Instrucciones</option>
+                            </select>                            
+                            <form action=""></form>
+                                <button class="button2">Descargar</button>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="servicios">
+                        <div class="aport1">
+                            <label class="Label1" for="Tp_ahorros">Tipo de Servicios</label>
+                            
+                            <select name="Tp_servicios">
+                                <option value="">Seleccione el Tipo de Servicio</option>
+                                <option value="Medicina Prepagada">Medicina Prepagada</option>
+                                <option value="Telefonia Movil">Telefonia Movil</option>
+                                <option value="SOAT-Seguro de Vehiculo">SOAT-Seguro de Vehiculo</option>
+                                <option value="Seguro de Hogar">Seguro de Hogar</option>
+                                <option value="Seguro Funerario">Seguro Funerario</option>
+                            </select>
+                        </div>
+                            <br>    
+                            <label for="descrip1"></label>
+                            <input class="descrip1" type="text" id="descrip3" name="descrip3" readonly/>
+                        
+                        <div class="aport1">
+                            <br>
+                            <br>
+                            <label class="Label2" for="tp_plan">Plan del Servicio:</label>
+                            <select name="Tp_plan">
+                                <option value="">Seleccione el Tipo de Plan</option>
+                                <option value="Medicina Prepagada">Premium/Diamante</option>
+                                <option value="Telefonia Movil">Medium/Oro</option>
+                                <option value="SOAT-Seguro de Vehiculo">Basic/Plata</option>
+                            </select>
+                        </div>   
+                        <div class="aport1">
+                            <label class="Label2" for="vrcuotasrv">Cuota del Servicio:</label>
+                            <input class="vrcuotasrv" type="number" id="vrcuosrv" name="vrcuosrv" readonly/>
+                        </div>   
+                        
+                        <div class="aport1">
+                            <br>
+                            <br>
+                            <form action=""></form>
+                                <button class="button2">Proyectar</button>
+                                <h5>Esta proyección se genera en PDF.</h5>
+                            </form>                            
+                        </div>
+                        
+                        <div class="aport1">
+                            <br>
+                            <br>
+                            <label class="Label1" for="form_servicios">Descargar Formatos</label>
+                            <select name="form_servicios">
+                                <option value="">Seleccione el Formatos de Servicios</option>
+                                <option value="Solicitud de Servicios">Solicitud de Servicios</option>
+                            </select>                            
+                            <form action=""></form>
+                                <button class="button2">Descargar</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </main>
+    
+        <footer id="pie_pags">
+            <div class="caja_pie">
+                <div class="caja_ubicacion">
+                    <div class="mapa_ubicacion">
+                        <iframe class="iframe_ubicar" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=4.68521487971497,%20-74.05248071481152+(FONAHFAMI)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/car-satnav-gps/">Car GPS</a>
+                        </iframe>
+                    </div>  
+                    <div class="data_ubicacion">
+                        <h3>CARRERA 19 # 98-79<br>Bogotá - Colombia</h3>
+                    </div>    
+                </div>
+                <div class="caja_contacto">
+                    <h3><li><a href="servicioalcliente@fonahfami.com.co">servicioalcliente@fonahfami.com.co</a></li><br>+57 301 9999999</h3>
+                </div>
+                <div class="caja_redes">
+                    <div class="title_redes">
+                        <h2>Nuestras Redes Sociales</h2>
+                    </div>
+                    <div class="icons_redes">
+                        <div>
+                            <img class="img_facebook" src="../images/facebook.png" alt="img_facebook">
+                        </div>
+                            <a href="https://www.facebook.com/?locale=es_LA"></a>
+                        
+                        <div>
+                            <img class="img_xtwitter" src="../images/twitter.png" alt="img_xtwitter"><a href="https://x.com/?lang=es&mx=2"></a>
+                        </div>
+                        <div>
+                            <img class="img_instagram" src="../images/instagram.png" alt="img_instagram"><a href="https://www.instagram.com"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="caja_derechos">
+                    <h5>All right reserved @FONAHFAMI<br>Powered by @ANMAVINI<br>2024</h5>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

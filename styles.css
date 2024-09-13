@@ -1,0 +1,525 @@
+/*PRIORIDAD DE CLASES
+1-!important
+2-ID
+3-CLASS
+4-SELECTOR/ETIQUETA
+*/
+
+/*FORMATEO DE PAGINA*/
+* {
+    padding: 0.03%;
+    margin: 0.03%;
+    box-sizing: border-box;
+    font-style: none;
+    text-decoration: none;
+    grid-template-areas: none;
+  }
+
+#body{
+    background-color: darkgreen;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*FORMATEO DE LISTA*/
+  ul, li{
+    list-style: none;
+    display: inline-block;    
+  }
+
+  #Cabecera{
+    width: 100%;
+    height: 15vh;
+    margin-bottom: 3px;
+  }
+
+  #BarraNav{
+    width: 99.97%;
+    height: 100%;
+    background: linear-gradient(rgb(30, 209, 149),rgb(184, 241, 210) )
+  }
+
+  .BarraNav_ul div li a{
+    font: bold;
+    font-size:x-large;
+    color: darkseagreen;
+  }
+
+  .BarraNav_div{
+    display:flex;
+    justify-content: center;
+  }
+
+  .M_logo{
+    width: 800px;
+    height: 100%;
+  }
+
+  .M_inicio{
+    width: 200px;
+    height: 100%;
+    font: bold;
+    font-size:larger;
+    color: darkseagreen;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .M_Somos{
+    width: 200px;
+    height: 100%;
+    font: bold;
+    font-size:larger;
+    color: darkseagreen;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    justify-content: center;
+  }
+
+  .M_Normas{
+    width: 200px;
+    height: 100%;
+    font: bold;
+    font-size:larger;
+    color: darkseagreen;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .M_productos{
+    width: 200px;
+    height: 100%;
+    font: bold;
+    font-size:larger;
+    color: darkseagreen;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    justify-content: center;
+  }
+
+  .M_Saldos{
+    width: 200px;
+    height: 100%;
+    font: bold;
+    font-size:larger;
+    color: darkseagreen;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    justify-content: center;
+  }
+
+  #cuerpo{
+    width:99.97%;
+    height: 99.97%;
+    display:grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 100%;
+    color: darkseagreen;
+  }
+
+  .title_cuerpo{
+    display:flex;
+    height: 10%;
+    color: rgb(1, 26, 1);
+    white-space: nowrap;
+    align-items:center;
+    justify-content: center;
+    background-color: rgb(172, 184, 179);
+  }
+
+  #noticias{
+    width: 100%;
+    height: 100%;
+    display:grid;
+    grid-template-rows: 50% 40% 10%;
+    background-color:rgb(184, 241, 210);
+    margin-right: 3px;
+  } 
+  #site_interes{
+    width:100% ;
+    height: 100%;
+    grid-template-areas:
+    'dian dian dian'
+    'supersolidaria supersolidaria analfe'
+    'portafolio portafolio portafolio';
+    /* grid-template-columns: repeat(3,1fx);
+    grid-template-rows: repeat(3,1fx); */
+    font-family: 'Franklin Gothic Medium';
+    color: olive;
+    align-items: center; 
+    margin-bottom: 3px;
+  }
+
+  .site_dian{
+    grid-area: dian;
+  }
+  
+  .site_super{
+    grid-area: supersolidaria;
+  }
+  
+  .site_analfe{
+    grid-area: analfe;
+  }
+  
+  .site_portafolio{
+    grid-area: portafolio;
+  }
+
+  .img_dian{
+    width: 100%;
+    height: 100%;
+  }
+
+  .img_super{
+    width: 50%;
+    height: 50%;
+  }
+  .img_analfe{
+  
+    width: 40%;
+    height: 40%;
+  }
+  
+  .img_portafolio{
+    width: 100%;
+    height: 100%;
+  }
+
+  .calendario{
+    width:100% ;
+    justify-content:center;
+    margin-top: 3px;
+  }
+
+  .iframe_calendar{
+    height: 95%;
+    width:  97%;
+    margin: 5px 5px 5px 5px;
+    align-content: center;
+  }
+
+  .eventos{
+    width:100% ;
+    color: rgb(7, 92, 39);
+    height: 100%;
+  }
+
+.Items_eventos{
+  margin-top: 10px;
+  margin-left: 20px;
+  font-family: 'Franklin Gothic Medium';
+  font-size: medium;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+  .banner{
+    display:flex;
+    width: 99.94% ;
+    height:100%;
+    background-color:rgb(184, 241, 210) ;
+    margin-left: 3px;
+    margin-right: 3px;
+    align-items:center;
+    justify-content:center; 
+    font-style: italic;
+  } 
+
+  .img_banner{
+    width: 72vw;
+    height: 70vh;
+    flex-direction: column;
+  }
+
+  #pie_pags{
+    width: 99.97%;
+    height: 12.5%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background: linear-gradient(rgb(184, 241, 210) ,rgb(30, 209, 149))
+  }
+
+  .caja_pie{
+    display:flex;
+    width: 99.97%;
+    height: 100%;
+  }
+
+  .caja_ubicacion{
+    display:flex;
+    width:25% ;
+    height:100%;
+  }
+
+  .iframe_ubicar{
+    width: 80%;
+    height:80%;
+    margin-top: 10px;
+    margin-left: 20px;
+    justify-content: center;
+  }
+
+  .mapa_ubicacion{
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .data_ubicacion{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    font-family: 'Franklin Gothic Medium';
+    font-size: smaller;
+    text-align:center;
+    align-items:center;
+    justify-content: center;
+  }
+
+  .caja_contacto{
+    display:flex;
+    width: 25%;
+    height: 100%;
+    font-family: 'Franklin Gothic Medium';
+    font-size: smaller;
+    text-align:center;
+    justify-content:center; 
+    align-content:center ;
+  }
+
+  .caja_redes{
+    width:25% ;
+    font-family: 'Franklin Gothic Medium';
+    font-size: smaller;
+    text-align:center;
+  }
+
+  .title_redes{
+    height: 25%;
+  }
+
+  .caja_derechos{
+    display:flex;
+    width:25% ;
+    height:100%;
+    font-family: 'Franklin Gothic Medium';
+    font-size: small;
+    text-align:right;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .icons_redes{
+    display: flex;
+    height: 70%;
+    justify-content: center;
+  }
+
+  .img_facebook{
+    height: 90%;
+  }
+  
+  .img_xtwitter{
+    height: 90%;
+  }
+
+  .img_instagram{
+    height: 90%;
+  }
+
+  .principal{
+    width:98.7vw;
+    height: 70vh;
+  }
+
+  #cuerpo1{
+    width:99.97%;
+    height: 99.97%;
+    display:grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 100%;
+    color: darkseagreen;
+    align-content: center;
+  }
+
+  .menu1{
+    width:99.97%;
+    height: 99.97%;
+    background-color:rgb(184, 241, 210);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .button1{
+    position: relative;
+    border-radius: 20%;
+    height: 10%;
+    width: 80%;
+    margin-left: 13%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 22px;
+    transition: .3s linear;
+    cursor: pointer;
+  }
+
+  .button1:hover,.button2:hover,.button3:hover {
+    background-color: forestgreen;
+  } 
+ 
+  .visorpdf{
+    flex-direction:column;
+    display: flexbox;
+    width:100%;
+    height: 100%;
+    background-color:rgb(184, 241, 210); 
+    margin-left: 3px;
+    margin-right: 3px;
+    margin: 3px 3px 3px 3px;
+  }
+
+  #iframe_visor{
+    width: 100% ;
+    height:100%;
+    background-color:rgb(184, 241, 210) ;
+    font-style: italic;
+  }
+
+  .list1{
+    text-align: center;
+    justify-content: center;
+    font-size: large;
+    color: darkgreen;
+  }
+
+  #productos{
+    width:99.97%;
+    height: 99.97%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100%;
+    color: darkseagreen;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .aportes{
+    width:99.97%;
+    height: 99.97%;
+    background-color:rgb(184, 241, 210);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    color: darkgreen;
+    margin-right: 3px;
+  }
+
+  .descrip1{
+    width:80%;
+    height:20%;
+    background-color: rgb(187, 175, 175);
+  }
+
+  .cmptexto{
+    width:30%;
+    height:5%;
+  }
+
+  .Label1{
+    color: darkgreen;
+    font-size: x-large;
+  }
+
+  .Label2{
+    color: rgb(42, 139, 42);
+    font-size:large;
+  }
+
+  .aport1{
+    justify-content: center;
+    align-content: center;
+  }
+
+  .creditos{
+    width:99.97%;
+    height: 99.97%;
+    background-color:rgb(184, 241, 210);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    color: darkgreen;
+  }
+
+  .servicios{
+    width:99.97%;
+    height: 99.97%;
+    background-color:rgb(184, 241, 210);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    color: darkgreen;
+  }
+
+  .button2{
+    position: relative;
+    border-radius: 10%;
+    height: 15%;
+    width: 40%;
+    margin-left: 13%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 22px;
+    transition: .3s linear;
+    cursor: pointer;
+  }
+
+  .button3{
+    position: relative;
+    border-radius: 10%;
+    height: 15%;
+    width: 60%;
+    margin-left: 13%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 18px;
+    transition: .3s linear;
+    cursor: pointer;
+  }
+
+  .login{
+    width:99.97%;
+    height: 99.97%;
+    background-color:rgb(184, 241, 210);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-right: 3px;
+  }
+
+  #cuerpo2{
+    width:99.97%;
+    height: 99.97%;
+    display:grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+    color: darkseagreen;
+    align-content: center;
+  }
+
+  .ingreso{
+    background-color: rgb(123, 206, 206);
+    border-style: double;
+    align-content: center;
+    justify-content: center;
+  }
