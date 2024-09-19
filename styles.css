@@ -10,6 +10,9 @@
     font-style: none;
     text-decoration: none;
     grid-template-areas: none;
+    padding: 0% 0% 0% 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
   }
 
   /*FORMATEO DE LISTA*/
@@ -19,32 +22,52 @@
   }
 
   body{
-    width: 100%;
-    height: 100%;
+    width: 98vw;
+    height: 100vh;
     /* background: linear-gradient(rgb(203, 238, 207),rgb(102, 189, 147),rgb(3, 61, 33),rgb(44, 153, 100)); */
-background-color: darkgray;
+    background-color: rgb(237, 234, 245);
   }
     
   #Cabecera{
     width: 100%;
     height: 15vh;
+    padding: 0.3% 0.3% 0.3% 0.3%;
   }
 
-  #BarraNav{
+  #Navegar{
     width: 100%;
     height: 100%;
-    display: inline-grid;
+    
+  }
+
+  .Bar_Navegar{
+    width: 100%;
+    height: 100%;
+    display: grid;
     grid-template-areas: "logo logo inicio somos normas productos saldos" ;
   }
-
-  #BarraNav_div{
-    width: 100%;
-    height: 100%;
-  }
-
+  
   .M_logo{
     grid-area: logo;
     align-items: center;
+  }
+
+  .ico{
+    justify-items: center;
+    align-content: center;
+  }
+
+  .title{
+    font: bold;
+    font-size: x-large;
+  }
+
+  .title :hover{
+    padding-top: 5px 10px 5px 10px;
+    border: 1px solid rgba(0,0,0,0.623);
+    border-radius: 10px;
+    background-color: green;
+    color: white;
   }
 
   .M_inicio{
@@ -53,16 +76,6 @@ background-color: darkgray;
     justify-content: center;
     align-content: center;
   }
-
-.ico{
-  justify-items: center;
-  align-content: center;
-}
-
-.title{
-  font: bold;
-  font-size:larger;
-}
 
   .M_Somos{
     grid-area: somos;
@@ -92,51 +105,43 @@ background-color: darkgray;
     align-content: center;
   }
 
-  #cuerpo{
+  .cuerpo{
     width:99.97%;
-    height: 99.97%;
+    height: 65vh;
     display:grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 30% 70%;
     grid-template-rows: 100%;
-    background-color: rgb(70, 71, 150);
+    padding: 0.3% 0.3% 0.3% 0.3%;
   }
 
-  .title_cuerpo{
-    display:flex;
-    height: 10%;
-    white-space: nowrap;
-    align-items:center;
-    justify-content: center;
-    /* background-color: rgb(172, 184, 179); */
-  }
-
-  #noticias{
+  .noticias{
     width: 100%;
     height: 100%;
     display:grid;
-    grid-template-rows: 50% 40% 10%;
+    grid-template-rows: 10% 40% 50%;
+    background: linear-gradient(to bottom right, rgb(78, 121, 88), rgb(139, 224, 168))
   } 
-  #site_interes{
-    width:100% ;
-    height: 100%;
-    display:grid;
-    grid-template-areas:
-    "title_interes title_interes"
-    "dian supersolidaria"
-    "analfe portafolio";
-    font-family: 'Franklin Gothic Medium';
-    align-items: center; 
-    justify-content: center;
-  }
-
+  
 .title_interes{
-  grid-area: title_interes;
+  display: flex;
+  font-size: x-large;
+  flex-direction: column;
   align-items: center;
   align-content: center;
   justify-content: center;
 }
 
-
+.site_interes{
+  width:100% ;
+  height: 100%;
+  display:grid;
+  grid-template-areas:
+  "dian supersolidaria"
+  "analfe portafolio";
+  font-family: 'Franklin Gothic Medium';
+  align-items: center; 
+  justify-content: center;
+}
   .site_dian{
     grid-area: dian;
     align-items: center;
@@ -175,31 +180,29 @@ background-color: darkgray;
     justify-content: center;
   }
   .img_analfe{  
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     align-items: center;
     justify-content: center;
   }
 
   .img_portafolio{
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     align-items: center;
     justify-content: center;
   }
 
   .calendario{
-    width:100% ;
-    height:100% ;
-    justify-content:center;
-    margin-top: 3px;
+    justify-content:center;  
   }
 
-  .iframe_calendar{
-    height: 95%;
-    width:  97%;
-    align-content: center;
-  }
+.iframe_calendar{
+  width:99%;
+  height:99%;
+  align-items: center;
+  align-content: center;
+}
 
   .eventos{
     width:100% ;
@@ -207,10 +210,8 @@ background-color: darkgray;
   }
 
 .Items_eventos{
-  font-family: 'Franklin Gothic Medium';
-  font-size: medium;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  width:100% ;
+  height: 100%;
 }
 
   .banner{
@@ -223,40 +224,40 @@ background-color: darkgray;
   } 
 
   .img_banner{
-    width: 72vw;
-    height: 70vh;
+    width: 68vw;
+    height: 65vh;
     flex-direction: column;
   }
 
   .caja_pie{
     display:flex;
     width: 99.97%;
-    height: 15vh;
+    height: 20vh;
     align-content: center;
     justify-content: center;
-    
   }
 
   .caja_ubicacion{
     display:flex;
-    width:20% ;
     height:100%;
-    align-content: center;
+    width: 20%;
+    align-items: center;
     justify-content: center;
-  }
-
-  .iframe_ubicar{
-    width: 80%;
-    height:80%;
-    justify-content: center;
-    align-content: center;
   }
 
   .mapa_ubicacion{
+    height: 100%;
+    width:  100%;
+    align-content: center;
     justify-content: center;
-    align-items: center;
+    margin-left: 10%;
   }
-  
+
+  .iframe_ubicar{
+    height: 100%;
+    width: 100%;
+  }
+
   .data_ubicacion{
     display:flex;
     width: 20%;
@@ -269,59 +270,68 @@ background-color: darkgray;
   }
 
   .caja_contacto{
-    display:flex;
     width: 20%;
-    font-family: 'Franklin Gothic Medium';
-    font-size: smaller;
+    font-size:small;
     text-align:center;
     align-items:center;
     justify-content:center; 
     align-content:center;
   }
 
+  .whatsaap{
+    display:flex;
+    align-items:center;
+    justify-content:center; 
+    align-content: center;
+  }
+
+  .img_whatsaap{
+    height: 50%;
+    width: 50%;
+  }
+
+  .caja_redes{
+    width:25% ;
+    height: 100%;
+    font-size: larger;
+    text-align:center;
+  }
+  .title_redes{
+    height: 25%;
+    justify-content: center;
+    align-items:flex-start;
+    
+  }
+  .icons_redes{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+  }
+
+  .img_facebook{
+    height: 90%;
+    width: 95%;
+  }
+  
+  .img_xtwitter{
+    height: 90%;
+    width: 95%;
+  }
+
+  .img_instagram{
+    height: 90%;
+    width: 95%;
+  }
+
   .caja_derechos{
     display:flex;
-    width:20% ;
-    font-family: 'Franklin Gothic Medium';
+    width:15%;
     font-size: small;
     text-align:right;
     align-items: flex-end;
     justify-content: flex-end;
-  }
-
-
-  .caja_redes{
-    width:20% ;
-    font-family: 'Franklin Gothic Medium';
-    font-size: smaller;
-    text-align:center;
-  }
-  .title_redes{
-    height: 30%;
-    justify-content: center;
-    align-content: flex-end;
-  }
-  .icons_redes{
-    display: flex;
-    height: 70%;
-    justify-content: center;
-    align-items: center;
-
-  }
-
-  .img_facebook{
-    height: 20%;
-    width: 20%;
-  }
-  
-  .img_xtwitter{
-    height: 20%;
-    width: 20%;
-  }
-
-  .img_instagram{
-    height: 20%;
-    width: 20%;
   }
 
   @media screen and (max-width: 1096px){
@@ -334,7 +344,15 @@ background-color: darkgray;
 
 /* INICIAN ESTILO DE PAGINA QUIENES SOMOS */
 
-  .principal{
+.title_cuerpo{
+  display:flex;
+  height: 10%;
+  align-items:center;
+  justify-content: center;
+  background-color: rgb(211, 204, 205)
+}
+ 
+.principal{
     width:98.7vw;
     height: 70vh;
   }
