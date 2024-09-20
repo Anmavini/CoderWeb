@@ -13,6 +13,7 @@
     padding: 0% 0% 0% 0%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
+
   }
 
   /*FORMATEO DE LISTA*/
@@ -21,16 +22,21 @@
     display: inline-block;    
   }
 
+  a{
+    text-decoration: none;
+  }
+
   body{
     width: 98vw;
     height: 100vh;
     /* background: linear-gradient(rgb(203, 238, 207),rgb(102, 189, 147),rgb(3, 61, 33),rgb(44, 153, 100)); */
     background-color: rgb(237, 234, 245);
   }
-    
+
+
   #Cabecera{
     width: 100%;
-    height: 15vh;
+    height: 20vh;
     padding: 0.3% 0.3% 0.3% 0.3%;
   }
 
@@ -334,19 +340,11 @@
     justify-content: flex-end;
   }
 
-  @media screen and (max-width: 1096px){
-    #pie_pags{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-  }
-
-/* INICIAN ESTILO DE PAGINA QUIENES SOMOS */
+/* INICIAN ESTILO DE PAGINA DE "QUIEN SOMOS" Y "NORMATIVA" */
 
 .title_cuerpo{
   display:flex;
-  height: 10%;
+  height: 15%;
   align-items:center;
   justify-content: center;
   background-color: rgb(211, 204, 205)
@@ -354,14 +352,14 @@
  
 .principal{
     width:98.7vw;
-    height: 70vh;
+    height: 65vh;
   }
 
   #cuerpo1{
     width:99.97%;
     height: 99.97%;
     display:grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 20% 80%;
     grid-template-rows: 100%;
     color: darkseagreen;
     align-content: center;
@@ -378,7 +376,7 @@
 
   .button1{
     position: relative;
-    border-radius: 20%;
+    border-radius: 10px;
     height: 10%;
     width: 80%;
     margin-left: 13%;
@@ -417,6 +415,8 @@
     font-size: large;
     color: darkgreen;
   }
+
+/* INICIAN ESTILO DE PAGINA DE "QUE OFRECEMOS" */
 
   #productos{
     width:99.97%;
@@ -465,6 +465,7 @@
   .aport1{
     justify-content: center;
     align-content: center;
+    align-items: center;
   }
 
   .creditos{
@@ -491,7 +492,7 @@
 
   .button2{
     position: relative;
-    border-radius: 10%;
+    border-radius: 10px;
     height: 15%;
     width: 40%;
     margin-left: 13%;
@@ -514,6 +515,8 @@
     transition: .3s linear;
     cursor: pointer;
   }
+
+/* INICIAN ESTILO DE PAGINA DE "TUS SALDOS" */
 
   .login{
     width:99.97%;
