@@ -5,15 +5,15 @@
 @import "../sass/modulos/_header";
 @import "../sass/modulos/_main";
 @import "../sass/modulos/_footer";
-/* ESTILOS QUIEN_SOMOS */
-@import "../sass/pag_Inicio/_noticias.scss";
-@import "../sass/pag_Inicio/_banner.scss";
-/* ESTILOS NORMATIVA */
+/* ESTILOS INICIO */
+@import "../sass/pag_inicio/noticias.scss";
+@import "../sass/pag_inicio/_banner.scss";
+/* ESTILOS NOSOTROS */
 @import "../sass/pag_quiensomos/_menu.scss";
 @import "../sass/pag_quiensomos/_visor.scss";
 /* ESTILOS PRODUCTOS */
 @import "../sass/pag_productos/aportes.scss";
 @import "../sass/pag_productos/prestamos.scss";
 @import "../sass/pag_productos/servicios.scss";
-/* ESTILOS TUSSALDOS */
+/* ESTILOS CONSULTAS */
 @import "../sass/pag_tussaldos/login";

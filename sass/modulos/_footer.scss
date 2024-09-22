@@ -1,102 +1,137 @@
-.caja_pie{
-    display:flex;
+#pie_pags{
+  width: auto;
+  font-size: xx-small;
+
+  .caja_pie{
+    display:grid;
     width: 99.97%;
     height: 20vh;
     align-content: center;
     justify-content: center;
-  }
+    background-color:whitesmoke;
+    grid-template-columns: 20% 19% 30% 15% 15%;
+    grid-template-rows: 100%;
 
-  .caja_ubicacion{
-    height:100%;
-    width: 20%;
-    align-items: center;
-    justify-content: center;
-  }
+    .caja_ubicacion{
+      height:100%;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      border-color:rgb(10, 83, 10);
+      .mapa_ubicacion{
+        height: 90%;
+        width:  90%;
+        align-items: center;
+        justify-items: center;
+        margin-left: 4%;
+        margin-top: 2%;
+        .iframe_ubicar{
+          height: 100%;
+          width: 100%;
+          border: 2%;
+          
+        }
+      }
+    }
 
-  .mapa_ubicacion{
-    height: 100%;
-    width:  100%;
-    align-content: center;
-    justify-content: center;
-    margin-left: 10%;
-  }
+    .data_ubicacion{
+      width: 100%;
+      align-content: center;
+      text-align: center;
+      text-overflow: initial;
+      font-size: large;
+      color:rgb(10, 83, 10);
+    }
 
-  .iframe_ubicar{
-    height: 100%;
-    width: 100%;
-  }
+    .caja_contacto{
+      width: 100%;
+      height: 100%;
+      text-align:center;
+      align-items:center;
+      justify-content:center; 
+      align-content:center;
+      display:grid;
+      grid-template-rows: 50% 50%;
+      grid-template-columns: 100%;
 
-  .data_ubicacion{
-    width: 20%;
-    font-family: 'Franklin Gothic Medium';
-    font-size: smaller;
-    text-align:center;
-    align-items:center;
-    justify-content: center;
-    align-content: center;
-  }
+      .email{
+        text-decoration: none;
+        text-emphasis-color: white;
+        height: 100%;
+        font-size: x-large;
+        text-align: center;
+        align-content: center;
+        color:rgb(10, 83, 10);
+      }
 
-  .caja_contacto{
-    width: 20%;
-    font-size:small;
-    text-align:center;
-    align-items:center;
-    justify-content:center; 
-    align-content:center;
-  }
+      .whatsaap{
+        width: 100%;
+        align-items:center;
+        justify-content:center; 
+        align-content: center;
+        display:grid;
+        grid-template-columns: 50% 50%;
+      
+        .ico_whatsaap{
+          text-align: end;
+          .img_whatsaap{
+            height: 25%;
+            width: 25%;
+          }
+        }
+        
+        .txt_whatsapp{
+          width: 100%;
+          align-items:center;
+          text-align: start;
+          font-size: large;
+          color:rgb(10, 83, 10);
+        }
+      }
+    }
 
-  .whatsaap{
-    display:flex;
-    align-items:center;
-    justify-content:center; 
-    align-content: center;
-  }
-
-  .img_whatsaap{
-    height: 50%;
-    width: 50%;
-  }
-
-  .caja_redes{
-    width:25% ;
-    height: 100%;
-    font-size: larger;
-    text-align:center;
-  }
-  .title_redes{
-    height: 25%;
-    justify-content: center;
-    align-items:flex-start;
+    .caja_redes{
+      width:100% ;
+      height: 100%;
+      text-align:center;
     
-  }
-  .icons_redes{
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    
-  }
+      .title_redes{
+        height: 25%;
+        font-size: large;
+        align-content: center;
+        color:rgb(10, 83, 10);
+      }
+      .icons_redes{
+        height: 75%;
+        display: flex;
+        align-content: flex-start;
+        
+        .img_facebook{
+          height: 80%;
+          width: 97%;
+        }
+        
+        .img_xtwitter{
+          height: 80%;
+          width: 97%;
+        }
 
-  .img_facebook{
-    height: 90%;
-    width: 95%;
-  }
-  
-  .img_xtwitter{
-    height: 90%;
-    width: 95%;
-  }
+        .img_instagram{
+          height: 80%;
+          width: 97%;
+        }
+      }
+    }
 
-  .img_instagram{
-    height: 90%;
-    width: 95%;
+    .caja_derechos{
+      height: 100%;
+      width: 100%;
+      display:flex;
+      font-size: small;
+      text-align:right;
+      align-items: flex-end;
+      justify-content: flex-end;
+      color: rgb(10, 83, 10);
+    }
   }
-
-  .caja_derechos{
-    display:flex;
-    width:15%;
-    font-size: small;
-    text-align:right;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
+}

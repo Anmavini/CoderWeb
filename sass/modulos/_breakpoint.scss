@@ -1,15 +1,13 @@
 @media screen and (max-width: 991px){
     
-    #header´{
-        flex-direction: column;
-    }
-    
     #Cabecera .navegar .bar_navegar .M_inicio{
         display: none;
     }
 
     #Cabecera .navegar .bar_navegar .M_Somos{
         display: none;
+        justify-items: end;
+        font-size: xx-small;
     }
 
     #Cabecera .navegar .bar_navegar .M_Normas{
@@ -24,8 +22,8 @@
         display: none;
     }
 
-    // #footer{
-    //     flex-direction: column;
-    //     text-align: center;
-    // }
+    main .cuerpo {
+        display:flex;
+        flex-direction: column;
+    }  
 }  
