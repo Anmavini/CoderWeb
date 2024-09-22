@@ -1,19 +1,19 @@
 /* ESTILOS RESET Y QUERYS */
-@import "../sass/modulos/_reset";
-@import "../sass/modulos/_breakpoint";
+@import "./sass/modulos/_reset";
+@import "./sass/modulos/_breakpoint";
 // /* ESTILOS HTML */
-@import "../sass/modulos/_header";
-@import "../sass/modulos/_main";
-@import "../sass/modulos/_footer";
+@import "./sass/modulos/_header";
+@import "./sass/modulos/_main";
+@import "./sass/modulos/_footer";
 /* ESTILOS INICIO */
-@import "../sass/pag_inicio/noticias.scss";
-@import "../sass/pag_inicio/_banner.scss";
+@import "./sass/pag_inicio/noticias.scss";
+@import "./sass/pag_inicio/_banner.scss";
 /* ESTILOS NOSOTROS */
-@import "../sass/pag_quiensomos/_menu.scss";
-@import "../sass/pag_quiensomos/_visor.scss";
+@import "./sass/pag_quiensomos/_menu.scss";
+@import "./sass/pag_quiensomos/_visor.scss";
 /* ESTILOS PRODUCTOS */
-@import "../sass/pag_productos/aportes.scss";
-@import "../sass/pag_productos/prestamos.scss";
-@import "../sass/pag_productos/servicios.scss";
+@import "./sass/pag_productos/aportes.scss";
+@import "./sass/pag_productos/prestamos.scss";
+@import "./sass/pag_productos/servicios.scss";
 /* ESTILOS CONSULTAS */
-@import "../sass/pag_tussaldos/login";
+@import "./sass/pag_tussaldos/login";
