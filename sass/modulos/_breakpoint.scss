@@ -1,0 +1,31 @@
+@media screen and (max-width: 991px){
+    
+    #header´{
+        flex-direction: column;
+    }
+    
+    #Cabecera .navegar .bar_navegar .M_inicio{
+        display: none;
+    }
+
+    #Cabecera .navegar .bar_navegar .M_Somos{
+        display: none;
+    }
+
+    #Cabecera .navegar .bar_navegar .M_Normas{
+        display: none;
+    }
+
+    #Cabecera .navegar .bar_navegar .M_productos{
+        display: none;
+    }
+
+    #Cabecera .navegar .bar_navegar .M_Saldos{
+        display: none;
+    }
+
+    // #footer{
+    //     flex-direction: column;
+    //     text-align: center;
+    // }
+}  

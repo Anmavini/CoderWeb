@@ -1,0 +1,69 @@
+#Cabecera{
+    width: 100%;
+    height: 20vh;
+    padding: 0.3%;
+        
+  .navegar{
+    width: 100%;
+    height: 100%;
+
+    .M_logo{
+      grid-area: logo;
+    }
+
+    .bar_navegar{
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 17.5% 17.5% 13% 13% 13% 13% 13%;
+      grid-template-rows: 100%;
+      grid-template-areas: "logo logo inicio somos normas productos saldos" ;
+      align-content: end;
+    
+      .M_inicio{
+        grid-area: inicio;
+       
+      }
+      
+      .M_Somos{
+        grid-area: somos;
+       
+      }
+      
+      .M_Normas{
+        grid-area: normas;
+       
+      }
+      
+      .M_productos{
+        grid-area: productos;
+       
+      }
+      
+      .M_Saldos{
+        grid-area: saldos;
+       
+      }
+    }
+  }
+}  
+
+.ico{
+  justify-items: center;
+  align-content: center;
+}
+
+.title{
+  font: bold;
+  font-size: x-large;
+}
+
+.title hover{
+  padding-top: 5px 10px 5px 10px;
+  border: 1px solid rgba(0,0,0,0.623);
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+}
+
+

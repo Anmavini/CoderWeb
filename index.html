@@ -29,44 +29,43 @@
         <meta name="theme-color" content="#ffffff">
 
         <!-- INCLUSION DE MIS ESTILOS -->
-         <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/styles.css">
         
-        <title>Inicio</title>
+        <title>Fondo de Ahorro Familiar</title>
     </head>
 
     <body id="body">
         <header id="Cabecera">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                <img class="navbar-brand" src="./images/logo-sinfondo.png" alt="Logo Principal"/>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">               
-                    <ul class="navbar-nav">
-                        <li class="nav-item M_inicio">
-                            
-                            <div class="ico"><img src="./icons/inicio-sinfondo.png" href="./index.html" alt="Icono_Inicio"/></div>
-                            <a class="nav-link active title" aria-current="page" href="./index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item M_Somos">
-                            <div class="ico"><img src="./icons/somos-sinfondo.png" alt="Icono_Somos"/></div>
-                            <a class="nav-link title" href="./pages/quiensomos.html">Quién Somos?</a>
-                        </li>
-                        <li class="nav-item M_Normas">
-                            <div class="ico"><img src="./icons/normas-sinfondo.png" alt="Icono_Normas"/></div>
-                            <a class="nav-link title" href="./pages/normativa.html">Normativa</a>
-                        </li>
-                        <li class="nav-item M_productos">
-                            <section class="ico"><img src="./icons/productos-sinfondo.png" alt="Icono_Productos"/></section>
-                            <a class="nav-link  title" href="./pages/productos.html">Lo que Ofrecemos</a>
-                        </li>
-                        <li class="nav-item M_Saldos">
-                            <section class="ico"><img src="./icons/saldos-sinfondo.png" alt="Icono_Saldos"/></section>
-                            <a class="nav-link  title" href="./pages/tussaldos.html">Tus Saldos</a>
-                        </li>
-                    </ul>
-                </div>
+            <nav class="navbar navbar-expand-lg navegar">
+                <div class="container-fluid  ">
+                    <img class="navbar-brand M_logo" src="./images/logo-sinfondo.png" alt="Logo Principal"/>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end bar_navegar" id="navbarNav">               
+                        <ul class="navbar-nav">
+                            <li class="nav-item M_inicio">
+                                <div class="ico"><img src="./icons/inicio-sinfondo.png" href="./index.html" alt="Icono_Inicio"/>
+                                <a class="nav-link active title" href="./index.html">Inicio</a></div>
+                            </li>
+                            <li class="nav-item M_Somos">
+                                <div class="ico"><img src="./icons/somos-sinfondo.png" alt="Icono_Somos"/>
+                                <a class="nav-link title" href="./pages/quiensomos.html">Quién Somos?</a></div>
+                            </li>
+                            <li class="nav-item M_Normas">
+                                <div class="ico"><img src="./icons/normas-sinfondo.png" alt="Icono_Normas"/>
+                                <a class="nav-link title" href="./pages/normativa.html">Normativa</a></div>
+                            </li>
+                            <li class="nav-item M_productos">
+                                <div class="ico"><img src="./icons/productos-sinfondo.png" alt="Icono_Productos"/>
+                                <a class="nav-link title" href="./pages/productos.html">Lo que Ofrecemos</a></div>
+                            </li>
+                            <li class="nav-item M_Saldos">
+                                <div class="ico"><img src="./icons/saldos-sinfondo.png" alt="Icono_Saldos"/>
+                                <a class="nav-link title" href="./pages/tussaldos.html">Tus Saldos</a></div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>   
@@ -74,6 +73,11 @@
         <main id="main">
             <section class="cuerpo">
                 <section class="noticias">
+
+                    <section class="hora_col">
+                        <iframe class="iframe_horacol" src="https://horalegalnueva.inm.gov.co/widget.html"></iframe>
+                    </section>
+
                     <section class="title_interes"><p>Sitios de Interes</p></section>
                     <section class="site_interes">
                         <section class="site_dian">
@@ -105,18 +109,8 @@
                             </li>
                         </section>
                     </section>
-                    <section class="calendario">
-                        <iframe class="iframe_calendar" src="https://horalegalnueva.inm.gov.co/widget.html"></iframe>
-                    </section>
-                    
-                    <!-- <section class="eventos">
-                        <section class="Items_eventos">
-                            <p>Días de Reuniones:</p>
-                            <p>Días de Eventos:</p>
-                            <p>Días de Cumpleaños:</p>
-                        </section>
-                    </section> -->
                 </section>
+
                 <section class="banner">
                     <section><img class="img_banner" src="./images/bienvenida.png" alt="Bienvenidos"/></section>
                 </section>

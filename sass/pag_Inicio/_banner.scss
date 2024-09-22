@@ -1,0 +1,14 @@
+.banner{
+    display:flex;
+    width: 99.94% ;
+    height:100%;
+    align-items:center;
+    justify-content:center; 
+    font-style: italic;
+  } 
+
+  .img_banner{
+    width: 68vw;
+    height: 65vh;
+    flex-direction: column;
+  }

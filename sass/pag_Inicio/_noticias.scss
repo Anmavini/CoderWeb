@@ -1,0 +1,90 @@
+  .noticias{
+    width: 100%;
+    height: 100%;
+    display:grid;
+    grid-template-rows: 60% 10% 30%;
+    background: linear-gradient(to bottom right, rgb(78, 121, 88), rgb(139, 224, 168))
+  } 
+
+  .hora_col{
+    justify-content:center;  
+  }
+  
+  .iframe_hora_col{
+    width:99%;
+    height:99%;
+    align-items: center;
+    align-content: center;
+  }
+
+.title_interes{
+  display: flex;
+  font-size: x-large;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.site_interes{
+  width:100% ;
+  height: 100%;
+  display:grid;
+  grid-template-areas:
+  "dian supersolidaria"
+  "analfe portafolio";
+  font-family: 'Franklin Gothic Medium';
+  align-items: center; 
+  justify-content: center;
+}
+  .site_dian{
+    grid-area: dian;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .site_super{
+    grid-area: supersolidaria;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .site_analfe{
+    grid-area: analfe;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .site_portafolio{
+    grid-area: portafolio;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img_dian{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img_super{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .img_analfe{  
+    width: 90%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img_portafolio{
+    width: 90%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+
