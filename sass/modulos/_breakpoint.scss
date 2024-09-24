@@ -1,4 +1,4 @@
-@media screen and (max-width: 991px){
+@media screen and (max-width:1089px){
     
     #Cabecera .navegar .bar_navegar .M_inicio{
         display: none;
@@ -22,8 +22,34 @@
         display: none;
     }
 
-    main .cuerpo {
-        display:flex;
+    #main .cuerpo {
+        height: 100%;
+        width: 100%;
+        display:list-item;
         flex-direction: column;
-    }  
+    }
+
+    #main .cuerpo .noticias{
+        grid-template-rows: 75% 25%;
+    }
+
+    #main .cuerpo .noticias .site_interes .site_dian .img_dian{
+        width: 60%;
+        height: 60%;
+    }
+    
+    #main .cuerpo .noticias .site_interes .site_portafolio .img_portafolio{
+        width: 60%;
+        height: 60%;
+    }
+
+    #main .cuerpo .noticias .site_interes .site_analfe .img_analfe{
+        width: 50%;
+        height: 50%;
+    }
+
+    #main .cuerpo .noticias .site_interes .site_super .img_super{
+        width: 30%;
+        height: 30%;
+    }
 }  

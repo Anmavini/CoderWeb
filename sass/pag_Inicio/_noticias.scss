@@ -7,18 +7,15 @@ main{
       grid-template-rows: 70% 30%;
       background: linear-gradient(to bottom right, rgb(78, 121, 88), rgb(139, 224, 168));
 
-        .hora_col{
+      .hora_col{
+        width: 100%;
+        height: 60%;
+        text-align: center;
+        .iframe_hora_col{
           width: 100%;
           height: 60%;
-          justify-content:center;  
-        
-            .iframe_hora_col{
-              width: 100%;
-              height: 60%;
-              align-items: center;
-              justify-items: center;
-            }
-          }
+        }
+      }
 
       .site_interes{
         width:100% ;
@@ -30,14 +27,13 @@ main{
         "dian portafolio"
         "analfe supersolidaria";
         font-family: 'Franklin Gothic Medium';
-        align-items: center; 
-        justify-content: center;
-      
+              
         .site_dian{
           height: 100%;
           grid-area: dian;
-          align-content: center; 
-          justify-content: center;
+          text-align: center;
+          align-items: center;
+          
           .img_dian{
             width: 100%;
             height: 100%;
@@ -47,8 +43,9 @@ main{
         .site_super{
           height: 100%;
           grid-area: supersolidaria;
+          text-align: center;
           align-items: center;
-          justify-items: center;
+          
           .img_super{
             width: 70%;
             height: 70%;
@@ -58,8 +55,9 @@ main{
         .site_analfe{
           height: 100%;
           grid-area: analfe;
-          align-content: center;
-          justify-content: center;
+          text-align: center;
+          align-items: center;
+          
           .img_analfe{  
             width: 70%;
             height: 70%;
@@ -69,13 +67,38 @@ main{
         .site_portafolio{
           height: 100%;
           grid-area: portafolio;
+          text-align: center;
           align-items: center;
-          justify-items: center;
+          
           .img_portafolio{
             width: 100%;
             height: 100%;
           }
         }
+      }
+
+      .img_dian:hover{
+        transform: translatey(-20px);
+        -webkit-transform: translatey(-20px);
+        -moz-transform: translatey(-20px);
+      }
+                  
+      .img_portafolio:hover{
+        transform: translatey(-20px);
+        -webkit-transform: translatey(-20px);
+        -moz-transform: translatey(-20px);
+      }
+
+      .img_analfe:hover{
+        transform: translatey(20px);
+        -webkit-transform: translatey(20px);
+        -moz-transform: translatey(20px);
+      }
+
+      .img_super:hover{
+        transform: translatey(20px);
+        -webkit-transform: translatey(20px);
+        -moz-transform: translatey(20px);
       }
     }
   }

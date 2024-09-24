@@ -1,23 +1,23 @@
 #pie_pags{
-  width: auto;
   font-size: xx-small;
 
   .caja_pie{
     display:grid;
     width: 99.97%;
-    height: 20vh;
+    height: 15vh;
     align-content: center;
     justify-content: center;
     background-color:whitesmoke;
-    grid-template-columns: 20% 19% 30% 15% 15%;
+    grid-template-columns: 20% 20% 30% 15% 15%;
     grid-template-rows: 100%;
+    margin-right: 10%;
 
     .caja_ubicacion{
       height:100%;
       width: 100%;
       align-items: center;
       justify-content: center;
-      border-color:rgb(10, 83, 10);
+      
       .mapa_ubicacion{
         height: 90%;
         width:  90%;
@@ -29,9 +29,13 @@
           height: 100%;
           width: 100%;
           border: 2%;
-          
         }
       }
+      .mapa_ubicacion:hover{
+        transform: scale3d(1.5, 1.5, 0.3);
+        -webkit-transform: scale3d(1.5, 1.5, 0.3);
+        -moz-transform: scale3d(1.5, 1.5, 0.3);
+      }        
     }
 
     .data_ubicacion{
@@ -79,13 +83,37 @@
             width: 25%;
           }
         }
-        
+
         .txt_whatsapp{
           width: 100%;
           align-items:center;
           text-align: start;
           font-size: large;
           color:rgb(10, 83, 10);
+        }
+
+        .ico_whatsaap:hover{
+          animation-name: surprise;
+              -webkit-animation-name: surprise;
+              -moz-animation-name: surprise;
+          animation-duration: .8s;
+              -webkit-animation-duration: .8s;
+              -moz-animation-duration: .8s;
+        }
+
+        @keyframes surprise
+        {
+          0% {transform: rotate(0deg) scale(1,1);;}
+          10% {transform: rotate(7deg) scale(2,2);}
+          20% {transform: rotate(-7deg) scale(2,2);}
+          30% {transform: rotate(7deg) scale(2,2);}
+          40% {transform: rotate(-7deg) scale(2,2);}
+          50% {transform: rotate(7deg) scale(2,2);}
+          60% {transform: rotate(-7deg) scale(2,2);}
+          70% {transform: rotate(7deg) scale(2,2);}
+          80% {transform: rotate(-7deg) scale(2,2);}
+          90% {transform: rotate(7deg) scale(2,2);}
+          100% {transform: rotate(0deg) scale(1,1);}
         }
       }
     }
@@ -107,31 +135,60 @@
         align-content: flex-start;
         
         .img_facebook{
-          height: 80%;
-          width: 97%;
+          height: 70%;
+          width: 90%;
         }
         
         .img_xtwitter{
-          height: 80%;
-          width: 97%;
+          height: 70%;
+          width: 90%;
         }
 
         .img_instagram{
-          height: 80%;
-          width: 97%;
+          height: 70%;
+          width: 90%;
         }
       }
-    }
 
-    .caja_derechos{
-      height: 100%;
-      width: 100%;
-      display:flex;
-      font-size: small;
-      text-align:right;
-      align-items: flex-end;
-      justify-content: flex-end;
-      color: rgb(10, 83, 10);
+      .img_facebook:hover{
+        box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+        transform: translate(0px,5px);
+        -webkit-transform: translate(0px,5px);
+        -moz-transform:translate(0px,5px);
+      }
+
+      .img_instagram:hover{
+        box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+        transform: translatex(10px);
+        -webkit-transform: translatex(10px);
+        -moz-transform: translatex(10px);
+      }
+                  
+      .img_xtwitter:hover{
+        box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+        transform: translate(0px,5px);
+        -webkit-transform: translate(0px,5px);
+        -moz-transform:translate(0px,5px);
+      }
+
+      .img_facebook:hover{
+        box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+        transform: translatex(-10px);
+        -webkit-transform: translatex(-10px);
+        -moz-transform: translatex(-10px);
+      }
     }
+  }
+
+  .caja_derechos{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    font-size: small;
+    text-align:right;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: rgb(10, 83, 10);
+    margin-right: 2%;
   }
 }
