@@ -150,7 +150,7 @@ body main .cuerpo {
 }
 body main .title_cuerpo {
   display: flex;
-  height: 15%;
+  height: 5%;
   font-size: xx-large;
   text-align: center;
   align-items: center;
@@ -169,7 +169,7 @@ body main .principal .cuerpo1 {
   color: darkseagreen;
   align-content: center;
 }
-body main .principal #cuerpo2 {
+body main .principal .cuerpo2 {
   width: 99.97%;
   height: 99.97%;
   display: grid;
@@ -178,7 +178,7 @@ body main .principal #cuerpo2 {
   color: darkseagreen;
   align-content: center;
 }
-body main .principal #productos {
+body main .principal .productos {
   width: 99.97%;
   height: 99.97%;
   display: grid;
@@ -387,7 +387,8 @@ body pie_pags {
   align-items: flex-end;
   justify-content: flex-end;
   color: rgb(10, 83, 10);
-  margin-right: 2%;
+  margin-right: 5%;
+  margin-bottom: 5%;
 }
 
 /* ESTILOS INICIO */
@@ -493,7 +494,7 @@ main .cuerpo .noticias .img_super:hover {
 }
 
 /* ESTILOS NOSOTROS */
-#main .principal .cuerpo1 .menu1 {
+main .principal .cuerpo1 .menu1 {
   width: 99.97%;
   height: 99.97%;
   background-color: rgb(184, 241, 210);
@@ -501,7 +502,7 @@ main .cuerpo .noticias .img_super:hover {
   align-items: center;
   align-content: center;
 }
-#main .principal .cuerpo1 .menu1 .button1 {
+main .principal .cuerpo1 .menu1 .button1 {
   position: relative;
   border-radius: 10px;
   height: 10%;
@@ -513,7 +514,7 @@ main .cuerpo .noticias .img_super:hover {
   transition: 0.3s linear;
   cursor: pointer;
 }
-#main .principal .cuerpo1 .menu1 .button1:hover, #main .principal .cuerpo1 .menu1 .button2:hover, #main .principal .cuerpo1 .menu1 .button3:hover {
+main .principal .cuerpo1 .menu1 .button1:hover, main .principal .cuerpo1 .menu1 .button2:hover, main .principal .cuerpo1 .menu1 .button3:hover {
   background-color: forestgreen;
 }
 
@@ -619,16 +620,13 @@ main .principal .cuerpo1 .visorpdf .iframe_visor {
 
 /* ESTILOS CONSULTAS */
 .login {
+  display: flex;
   width: 99.97%;
   height: 99.97%;
   background-color: rgb(184, 241, 210);
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  margin-right: 3px;
+  text-align: center;
 }
-
-.ingreso {
+.login .ingreso {
   background-color: rgb(123, 206, 206);
   border-style: double;
   align-content: center;
