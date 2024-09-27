@@ -1,64 +1,53 @@
 .aportes{
-    width:99.97%;
-    height: 99.97%;
-    background-color:rgb(184, 241, 210);
-    justify-content: center;
-    align-items: center;
+    width:100%;
+    height: 100%;
     align-content: center;
-    justify-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom right, rgb(64, 233, 121), rgb(115, 184, 131));
     color: darkgreen;
-    margin-right: 3px;
-  }
 
-  .descrip1{
-    width:80%;
-    height:20%;
-    background-color: rgb(187, 175, 175);
-  }
+    .descrip1{
+      width:80%;
+      height:20%;
+      background-color: rgb(187, 175, 175);
+    }
 
-  .cmptexto{
-    width:30%;
-    height:5%;
-  }
+    .aport1{
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      height: 10%;
 
-  .Label1{
-    color: darkgreen;
-    font-size: x-large;
-  }
+      .Label1{
+        color: darkgreen;
+        font-size: x-large;
+      }    
 
-  .Label2{
-    color: rgb(42, 139, 42);
-    font-size:large;
-  }
+      .Label2{
+        color: rgb(42, 139, 42);
+        font-size:large;
+      }
 
-  .aport1{
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-  }
+      .cmptexto{
+        width:30%;
+        height:5%;
+      }
 
-  .button2{
-    position: relative;
-    border-radius: 10px;
-    height: 15%;
-    width: 40%;
-    margin-left: 13%;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    font-size: 22px;
-    transition: .3s linear;
-    cursor: pointer;
-  }
+      .button2{
+        position: relative;
+        border-radius: 10px;
+        height: 50%;
+        width: 40%;
+        margin-left: 13%;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        font-size: 22px;
+        transition: .3s linear;
+        cursor: pointer;
+      }
 
-  .button3{
-    position: relative;
-    border-radius: 10%;
-    height: 15%;
-    width: 60%;
-    margin-left: 13%;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    font-size: 18px;
-    transition: .3s linear;
-    cursor: pointer;
+      .button2:hover{
+        background-color: forestgreen;
+    }
+    }
   }

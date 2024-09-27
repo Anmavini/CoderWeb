@@ -1,26 +1,41 @@
 main{
   .cuerpo{
     .noticias{
-      width: 100%;
-      height: 100%;
+      width: 95%;
+      height: 90%;
+      margin: 5%;
       display:grid;
-      grid-template-rows: 70% 30%;
+      grid-template-rows: 50% 10% 40%;
       background: linear-gradient(to bottom right, rgb(78, 121, 88), rgb(139, 224, 168));
+      
 
       .hora_col{
         width: 100%;
-        height: 60%;
+        height: 100%;
         text-align: center;
+        align-content: center;
+        // background-color: rgb(158, 154, 154);
         .iframe_hora_col{
           width: 100%;
-          height: 60%;
+          height: 60%; 
         }
+      }
+
+      .title_interes{
+        text-align: center;
+        align-content: center;
+        font-size: x-large;
+        font-style: italic;
+        background: linear-gradient(to bottom right, rgb(47, 78, 54), rgb(48, 185, 94));
       }
 
       .site_interes{
         width:100% ;
         height: 100%;
         display:grid;
+        text-align: center;
+        align-content: center;
+       
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
         grid-template-areas:
@@ -32,8 +47,7 @@ main{
           height: 100%;
           grid-area: dian;
           text-align: center;
-          align-items: center;
-          
+          align-content: center;
           .img_dian{
             width: 100%;
             height: 100%;
@@ -44,8 +58,7 @@ main{
           height: 100%;
           grid-area: supersolidaria;
           text-align: center;
-          align-items: center;
-          
+          align-content: center;
           .img_super{
             width: 70%;
             height: 70%;
@@ -56,8 +69,7 @@ main{
           height: 100%;
           grid-area: analfe;
           text-align: center;
-          align-items: center;
-          
+          align-content: center;          
           .img_analfe{  
             width: 70%;
             height: 70%;
@@ -68,8 +80,7 @@ main{
           height: 100%;
           grid-area: portafolio;
           text-align: center;
-          align-items: center;
-          
+          align-content: center;          
           .img_portafolio{
             width: 100%;
             height: 100%;

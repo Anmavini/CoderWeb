@@ -2,7 +2,7 @@
 body{
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgb(203, 238, 207),rgb(102, 189, 147),rgb(3, 61, 33),rgb(44, 153, 100));
+    background: linear-gradient(rgb(59, 184, 123),rgb(44, 153, 100));
     
     main{
         width:100%;
@@ -11,7 +11,7 @@ body{
         /* Parametros - main de la página Inicio*/
         .cuerpo{
         width:99.97%;
-        height: 65vh;
+        height: 70vh;
         display:grid;
         grid-template-columns: 30% 70%;
         grid-template-rows: 100%;
@@ -28,31 +28,33 @@ body{
         }
 
         .principal{
-            width:98.7vw;
-            height: 65vh;
+            width:100%;
+            height: 70vh;
             
             .cuerpo1{
-                width:99.97%;
+                width:99%;
                 height: 99.97%;
                 display:grid;
                 grid-template-columns: 30% 70%;
                 grid-template-rows: 100%;
                 color: darkseagreen;
                 align-content: center;
+                margin: 0.5%;
             }
         
             .cuerpo2{
-                width:99.97%;
+                width:99%;
                 height: 99.97%;
                 display:grid;
                 grid-template-columns: 20% 80%;
                 grid-template-rows: 100%;
                 color: darkseagreen;
                 align-content: center;
+                margin: 0.5%;
             }
             
             .productos{
-                width:99.97%;
+                width:99%;
                 height: 99.97%;
                 display:grid;
                 grid-template-columns: repeat(3,1fr);
@@ -60,6 +62,7 @@ body{
                 color: darkseagreen;
                 align-content: center;
                 justify-content: center;
+                margin: 0.5%;
             }
         }
     }
@@ -67,7 +70,5 @@ body{
     pie_pags{
         width: 100%;
         height: 15%;
-        padding: 5%;
-        margin: 3%;
     }
 }

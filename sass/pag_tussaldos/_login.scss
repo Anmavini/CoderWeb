@@ -1,15 +1,73 @@
 .login{
-    display: flex;
     width:99.97%;
     height: 99.97%;
-    background-color:rgb(184, 241, 210);
+    background-color: rgb(147, 231, 220);
+    display: grid;
+    grid-template-rows: 10% 40% 10% 40%;
     text-align: center;
-    
-    
+    justify-content: center;
+    align-content: center;
+
+    .txt_ingreso{
+        align-items: center;
+        align-content: center;
+        font-size: x-large;
+        color: black;
+    }
+
     .ingreso{
-        background-color: rgb(123, 206, 206);
+        height: 100%;
+        background-color: aqua;
+        border-style: double;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        font-size: x-large;
+        color: black;
+
+        .pssword{
+            height: 50%;
+        }
+
+        .user{
+            height: 50%;
+        }
+
+
+        
+    }
+
+    .txt_consulta{
+        align-items: center;
+        align-content: center;   
+        font-size: x-large;
+        color: black;
+    }
+
+
+    .consulta{
         border-style: double;
         align-content: center;
         justify-content: center;
+        font-size: x-large;
+        color: black;
+
+    }
+
+    .button4{
+        position: relative;
+        border-radius: 10px;
+        height: 50%;
+        width: 80%;
+        margin-left: 13%;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        font-size: 22px;
+        transition: .3s linear;
+        cursor: pointer;
+    }
+
+    .button4:hover{
+        background-color: forestgreen;
     }
 }

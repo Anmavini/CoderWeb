@@ -72,7 +72,7 @@ a {
 }
 #Cabecera {
   width: 100%;
-  height: 20vh;
+  height: 15vh;
   padding: 0.3%;
 }
 #Cabecera .navegar {
@@ -133,7 +133,7 @@ a {
 body {
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgb(203, 238, 207), rgb(102, 189, 147), rgb(3, 61, 33), rgb(44, 153, 100));
+  background: linear-gradient(rgb(59, 184, 123), rgb(44, 153, 100));
 }
 body main {
   width: 100%;
@@ -143,7 +143,7 @@ body main {
 }
 body main .cuerpo {
   width: 99.97%;
-  height: 65vh;
+  height: 70vh;
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: 100%;
@@ -157,29 +157,31 @@ body main .title_cuerpo {
   justify-content: center;
 }
 body main .principal {
-  width: 98.7vw;
-  height: 65vh;
+  width: 100%;
+  height: 70vh;
 }
 body main .principal .cuerpo1 {
-  width: 99.97%;
+  width: 99%;
   height: 99.97%;
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: 100%;
   color: darkseagreen;
   align-content: center;
+  margin: 0.5%;
 }
 body main .principal .cuerpo2 {
-  width: 99.97%;
+  width: 99%;
   height: 99.97%;
   display: grid;
   grid-template-columns: 20% 80%;
   grid-template-rows: 100%;
   color: darkseagreen;
   align-content: center;
+  margin: 0.5%;
 }
 body main .principal .productos {
-  width: 99.97%;
+  width: 99%;
   height: 99.97%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -187,16 +189,16 @@ body main .principal .productos {
   color: darkseagreen;
   align-content: center;
   justify-content: center;
+  margin: 0.5%;
 }
 body pie_pags {
   width: 100%;
   height: 15%;
-  padding: 5%;
-  margin: 3%;
 }
 
 #pie_pags {
   font-size: xx-small;
+  margin: 0.5%;
 }
 #pie_pags .caja_pie {
   display: grid;
@@ -205,9 +207,8 @@ body pie_pags {
   align-content: center;
   justify-content: center;
   background-color: whitesmoke;
-  grid-template-columns: 20% 20% 30% 15% 15%;
+  grid-template-columns: 20% 20% 30% 20% 10%;
   grid-template-rows: 100%;
-  margin-right: 10%;
 }
 #pie_pags .caja_pie .caja_ubicacion {
   height: 100%;
@@ -273,8 +274,8 @@ body pie_pags {
   text-align: end;
 }
 #pie_pags .caja_pie .caja_contacto .whatsaap .ico_whatsaap .img_whatsaap {
-  height: 25%;
-  width: 25%;
+  height: 20%;
+  width: 20%;
 }
 #pie_pags .caja_pie .caja_contacto .whatsaap .txt_whatsapp {
   width: 100%;
@@ -330,17 +331,18 @@ body pie_pags {
   width: 100%;
   height: 100%;
   text-align: center;
+  align-content: center;
 }
 #pie_pags .caja_pie .caja_redes .title_redes {
-  height: 25%;
-  font-size: large;
-  align-content: center;
+  height: 30%;
+  font-size: x-large;
   color: rgb(10, 83, 10);
 }
 #pie_pags .caja_pie .caja_redes .icons_redes {
-  height: 75%;
+  height: 70%;
   display: flex;
-  align-content: flex-start;
+  align-content: center;
+  justify-content: center;
 }
 #pie_pags .caja_pie .caja_redes .icons_redes .img_facebook {
   height: 70%;
@@ -383,35 +385,44 @@ body pie_pags {
   width: 100%;
   display: flex;
   font-size: small;
-  text-align: right;
-  align-items: flex-end;
-  justify-content: flex-end;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   color: rgb(10, 83, 10);
-  margin-right: 5%;
-  margin-bottom: 5%;
 }
 
 /* ESTILOS INICIO */
 main .cuerpo .noticias {
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 90%;
+  margin: 5%;
   display: grid;
-  grid-template-rows: 70% 30%;
+  grid-template-rows: 50% 10% 40%;
   background: linear-gradient(to bottom right, rgb(78, 121, 88), rgb(139, 224, 168));
 }
 main .cuerpo .noticias .hora_col {
   width: 100%;
-  height: 60%;
+  height: 100%;
   text-align: center;
+  align-content: center;
 }
 main .cuerpo .noticias .hora_col .iframe_hora_col {
   width: 100%;
   height: 60%;
 }
+main .cuerpo .noticias .title_interes {
+  text-align: center;
+  align-content: center;
+  font-size: x-large;
+  font-style: italic;
+  background: linear-gradient(to bottom right, rgb(47, 78, 54), rgb(48, 185, 94));
+}
 main .cuerpo .noticias .site_interes {
   width: 100%;
   height: 100%;
   display: grid;
+  text-align: center;
+  align-content: center;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   grid-template-areas: "dian portafolio" "analfe supersolidaria";
@@ -421,7 +432,7 @@ main .cuerpo .noticias .site_interes .site_dian {
   height: 100%;
   grid-area: dian;
   text-align: center;
-  align-items: center;
+  align-content: center;
 }
 main .cuerpo .noticias .site_interes .site_dian .img_dian {
   width: 100%;
@@ -431,7 +442,7 @@ main .cuerpo .noticias .site_interes .site_super {
   height: 100%;
   grid-area: supersolidaria;
   text-align: center;
-  align-items: center;
+  align-content: center;
 }
 main .cuerpo .noticias .site_interes .site_super .img_super {
   width: 70%;
@@ -441,7 +452,7 @@ main .cuerpo .noticias .site_interes .site_analfe {
   height: 100%;
   grid-area: analfe;
   text-align: center;
-  align-items: center;
+  align-content: center;
 }
 main .cuerpo .noticias .site_interes .site_analfe .img_analfe {
   width: 70%;
@@ -451,7 +462,7 @@ main .cuerpo .noticias .site_interes .site_portafolio {
   height: 100%;
   grid-area: portafolio;
   text-align: center;
-  align-items: center;
+  align-content: center;
 }
 main .cuerpo .noticias .site_interes .site_portafolio .img_portafolio {
   width: 100%;
@@ -480,7 +491,7 @@ main .cuerpo .noticias .img_super:hover {
 
 .banner {
   display: flex;
-  width: 99.94%;
+  width: 100%;
   height: 100%;
   align-items: center;
   justify-content: center;
@@ -514,7 +525,7 @@ main .principal .cuerpo1 .menu1 .button1 {
   transition: 0.3s linear;
   cursor: pointer;
 }
-main .principal .cuerpo1 .menu1 .button1:hover, main .principal .cuerpo1 .menu1 .button2:hover, main .principal .cuerpo1 .menu1 .button3:hover {
+main .principal .cuerpo1 .menu1 .button1:hover {
   background-color: forestgreen;
 }
 
@@ -532,48 +543,87 @@ main .principal .cuerpo1 .visorpdf .iframe_visor {
 
 /* ESTILOS PRODUCTOS */
 .aportes {
-  width: 99.97%;
-  height: 99.97%;
-  background-color: rgb(184, 241, 210);
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: 100%;
   align-content: center;
-  justify-items: center;
+  text-align: center;
+  background: linear-gradient(to bottom right, rgb(64, 233, 121), rgb(115, 184, 131));
   color: darkgreen;
-  margin-right: 3px;
 }
-
-.descrip1 {
+.aportes .descrip1 {
   width: 80%;
   height: 20%;
   background-color: rgb(187, 175, 175);
 }
-
-.cmptexto {
-  width: 30%;
-  height: 5%;
-}
-
-.Label1 {
-  color: darkgreen;
-  font-size: x-large;
-}
-
-.Label2 {
-  color: rgb(42, 139, 42);
-  font-size: large;
-}
-
-.aport1 {
+.aportes .aport1 {
   justify-content: center;
   align-content: center;
   align-items: center;
+  height: 10%;
 }
-
-.button2 {
+.aportes .aport1 .Label1 {
+  color: darkgreen;
+  font-size: x-large;
+}
+.aportes .aport1 .Label2 {
+  color: rgb(42, 139, 42);
+  font-size: large;
+}
+.aportes .aport1 .cmptexto {
+  width: 30%;
+  height: 5%;
+}
+.aportes .aport1 .button2 {
   position: relative;
   border-radius: 10px;
-  height: 15%;
+  height: 50%;
+  width: 40%;
+  margin-left: 13%;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-size: 22px;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+.aportes .aport1 .button2:hover {
+  background-color: forestgreen;
+}
+
+.creditos {
+  width: 99.97%;
+  height: 99.97%;
+  background-color: rgb(184, 241, 210);
+  align-content: center;
+  text-align: center;
+  color: darkgreen;
+}
+.creditos .descrip1 {
+  width: 80%;
+  height: 20%;
+  background-color: rgb(187, 175, 175);
+}
+.creditos .aport1 {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 10%;
+}
+.creditos .aport1 .Label1 {
+  color: darkgreen;
+  font-size: x-large;
+}
+.creditos .aport1 .Label2 {
+  color: rgb(42, 139, 42);
+  font-size: large;
+}
+.creditos .aport1 .cmptexto {
+  width: 30%;
+  height: 5%;
+}
+.creditos .aport1 .button2 {
+  position: relative;
+  border-radius: 10px;
+  height: 50%;
   width: 40%;
   margin-left: 13%;
   margin-top: 3px;
@@ -583,54 +633,110 @@ main .principal .cuerpo1 .visorpdf .iframe_visor {
   cursor: pointer;
 }
 
-.button3 {
+.servicios {
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  text-align: center;
+  background: linear-gradient(to bottom right, rgb(64, 233, 121), rgb(115, 184, 131));
+  color: darkgreen;
+}
+.servicios .descrip1 {
+  width: 80%;
+  height: 20%;
+  background-color: rgb(187, 175, 175);
+}
+.servicios .aport1 {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 10%;
+}
+.servicios .aport1 .Label1 {
+  color: darkgreen;
+  font-size: x-large;
+}
+.servicios .aport1 .Label2 {
+  color: rgb(42, 139, 42);
+  font-size: large;
+}
+.servicios .aport1 .cmptexto {
+  width: 30%;
+  height: 5%;
+}
+.servicios .aport1 .button2 {
   position: relative;
-  border-radius: 10%;
-  height: 15%;
-  width: 60%;
+  border-radius: 10px;
+  height: 50%;
+  width: 40%;
   margin-left: 13%;
   margin-top: 3px;
   margin-bottom: 3px;
-  font-size: 18px;
+  font-size: 22px;
   transition: 0.3s linear;
   cursor: pointer;
 }
 
-.creditos {
-  width: 99.97%;
-  height: 99.97%;
-  background-color: rgb(184, 241, 210);
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  justify-items: center;
-  color: darkgreen;
-}
-
-.servicios {
-  width: 99.97%;
-  height: 99.97%;
-  background-color: rgb(184, 241, 210);
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  justify-items: center;
-  color: darkgreen;
-}
-
 /* ESTILOS CONSULTAS */
 .login {
-  display: flex;
   width: 99.97%;
   height: 99.97%;
-  background-color: rgb(184, 241, 210);
+  background-color: rgb(147, 231, 220);
+  display: grid;
+  grid-template-rows: 10% 40% 10% 40%;
   text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+.login .txt_ingreso {
+  align-items: center;
+  align-content: center;
+  font-size: x-large;
+  color: black;
 }
 .login .ingreso {
-  background-color: rgb(123, 206, 206);
+  height: 100%;
+  background-color: aqua;
+  border-style: double;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  font-size: x-large;
+  color: black;
+}
+.login .ingreso .pssword {
+  height: 50%;
+}
+.login .ingreso .user {
+  height: 50%;
+}
+.login .txt_consulta {
+  align-items: center;
+  align-content: center;
+  font-size: x-large;
+  color: black;
+}
+.login .consulta {
   border-style: double;
   align-content: center;
   justify-content: center;
+  font-size: x-large;
+  color: black;
+}
+.login .button4 {
+  position: relative;
+  border-radius: 10px;
+  height: 50%;
+  width: 80%;
+  margin-left: 13%;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-size: 22px;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+.login .button4:hover {
+  background-color: forestgreen;
 }
 
 /*# sourceMappingURL=styles.css.map */
