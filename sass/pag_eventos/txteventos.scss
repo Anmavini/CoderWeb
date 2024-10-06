@@ -1,0 +1,52 @@
+#body{
+    #main{
+        .principal{
+            .cuerpo3{
+                .menu3{
+                    width:100%;
+                    height: 100%;
+                    display:grid;
+                    grid-template-columns: 100%; 
+                    grid-template-rows: 30% 40% 30%;
+
+                    .evento1{
+                        width:100%;
+                        height: 100%;
+                        font-size: large;
+                        text-align:justify;
+                        align-content: center;
+                        background-color: rgb(4, 44, 4);
+                        
+                        .parrafo1{
+                            margin: 3% 3% 3% 3%;
+                        }
+                    }
+                    .evento2{
+                        width:100%;
+                        height: 100%;
+                        font-size: large;
+                        text-align:justify;
+                        align-content: center;
+                        background-color: rgb(4, 44, 4);
+                        
+                        .parrafo1{
+                            margin: 3% 3% 3% 3%;
+                        }
+                    }    
+                    .evento3{
+                        width:100%;
+                        height: 100%;
+                        font-size: large;
+                        text-align:justify;
+                        align-content: center;
+                        background-color: rgb(4, 44, 4);
+                        
+                        .parrafo1{
+                            margin: 3% 3% 3% 3%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

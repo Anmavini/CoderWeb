@@ -10,7 +10,7 @@
         font-size: xx-small;
     }
 
-    #Cabecera .navegar .bar_navegar .M_Normas{
+    #Cabecera .navegar .bar_navegar .M_eventos{
         display: none;
     }
 
@@ -31,7 +31,21 @@
 
     #main .cuerpo .noticias{
         grid-template-rows: 75% 25%;
+        background-color: blue;
     }
+
+    #main .cuerpo .noticias .hora_col .iframe_hora_col{
+        height: 70%;
+        width: 70%;
+    }
+
+    #main .cuerpo .noticias .hora_col .title_interes{
+        text-align: center;
+        align-content: center;
+        font-size: small;
+        font-style: italic;
+        background: linear-gradient(to bottom right, rgb(47, 78, 54), rgb(48, 185, 94));
+      }
 
     #main .cuerpo .noticias .site_interes .site_dian .img_dian{
         width: 60%;

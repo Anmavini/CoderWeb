@@ -35,7 +35,7 @@ a {
     justify-items: end;
     font-size: xx-small;
   }
-  #Cabecera .navegar .bar_navegar .M_Normas {
+  #Cabecera .navegar .bar_navegar .M_eventos {
     display: none;
   }
   #Cabecera .navegar .bar_navegar .M_productos {
@@ -52,6 +52,18 @@ a {
   }
   #main .cuerpo .noticias {
     grid-template-rows: 75% 25%;
+    background-color: blue;
+  }
+  #main .cuerpo .noticias .hora_col .iframe_hora_col {
+    height: 70%;
+    width: 70%;
+  }
+  #main .cuerpo .noticias .hora_col .title_interes {
+    text-align: center;
+    align-content: center;
+    font-size: small;
+    font-style: italic;
+    background: linear-gradient(to bottom right, rgb(47, 78, 54), rgb(48, 185, 94));
   }
   #main .cuerpo .noticias .site_interes .site_dian .img_dian {
     width: 60%;
@@ -88,7 +100,7 @@ a {
   display: grid;
   grid-template-columns: 17.5% 17.5% 13% 13% 13% 13% 13%;
   grid-template-rows: 100%;
-  grid-template-areas: "logo logo inicio somos normas productos saldos";
+  grid-template-areas: "logo logo inicio somos eventos productos saldos";
   align-content: end;
   justify-items: center;
   align-items: center;
@@ -99,8 +111,8 @@ a {
 #Cabecera .navegar .bar_navegar .M_Somos {
   grid-area: somos;
 }
-#Cabecera .navegar .bar_navegar .M_Normas {
-  grid-area: normas;
+#Cabecera .navegar .bar_navegar .M_eventos {
+  grid-area: eventos;
 }
 #Cabecera .navegar .bar_navegar .M_productos {
   grid-area: productos;
@@ -130,25 +142,25 @@ a {
 }
 
 /* Parametros Generales de la página */
-body {
+#body {
   width: 100%;
   height: 100%;
   background: linear-gradient(rgb(59, 184, 123), rgb(44, 153, 100));
 }
-body main {
+#body #main {
   width: 100%;
   height: 100%;
   /* Parametros - main de la página Inicio*/
   /* Parametros - titulo de la página*/
 }
-body main .cuerpo {
+#body #main .cuerpo {
   width: 99.97%;
   height: 70vh;
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: 100%;
 }
-body main .title_cuerpo {
+#body #main .title_cuerpo {
   display: flex;
   height: 5%;
   font-size: xx-large;
@@ -156,21 +168,21 @@ body main .title_cuerpo {
   align-items: center;
   justify-content: center;
 }
-body main .principal {
+#body #main .principal {
   width: 100%;
   height: 70vh;
 }
-body main .principal .cuerpo1 {
+#body #main .principal .cuerpo1 {
   width: 99%;
   height: 99.97%;
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 100%;
   grid-template-rows: 100%;
   color: darkseagreen;
   align-content: center;
   margin: 0.5%;
 }
-body main .principal .cuerpo2 {
+#body #main .principal .cuerpo2 {
   width: 99%;
   height: 99.97%;
   display: grid;
@@ -180,18 +192,40 @@ body main .principal .cuerpo2 {
   align-content: center;
   margin: 0.5%;
 }
-body main .principal .productos {
+#body #main .principal .cuerpo3 {
   width: 99%;
   height: 99.97%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 20% 80%;
   grid-template-rows: 100%;
   color: darkseagreen;
   align-content: center;
   justify-content: center;
+}
+#body #main .principal .cuerpo4 {
+  width: 99%;
+  height: 99.97%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  color: darkseagreen;
+  align-content: center;
   margin: 0.5%;
 }
-body pie_pags {
+#body #main .principal .productos {
+  width: 99%;
+  height: 99.97%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 20% 80%;
+  color: darkseagreen;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  margin: 0.5%;
+  background-color: rgb(167, 240, 167);
+}
+#body pie_pags {
   width: 100%;
   height: 15%;
 }
@@ -410,6 +444,16 @@ main .cuerpo .noticias .hora_col .iframe_hora_col {
   width: 100%;
   height: 60%;
 }
+main .cuerpo .noticias .calendar_col {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-content: center;
+}
+main .cuerpo .noticias .calendar_col .iframe_calendar_col {
+  width: 100%;
+  height: 100%;
+}
 main .cuerpo .noticias .title_interes {
   text-align: center;
   align-content: center;
@@ -435,8 +479,8 @@ main .cuerpo .noticias .site_interes .site_dian {
   align-content: center;
 }
 main .cuerpo .noticias .site_interes .site_dian .img_dian {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
 }
 main .cuerpo .noticias .site_interes .site_super {
   height: 100%;
@@ -465,8 +509,8 @@ main .cuerpo .noticias .site_interes .site_portafolio {
   align-content: center;
 }
 main .cuerpo .noticias .site_interes .site_portafolio .img_portafolio {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
 }
 main .cuerpo .noticias .img_dian:hover {
   transform: translatey(-20px);
@@ -497,11 +541,19 @@ main .cuerpo .noticias .img_super:hover {
   justify-content: center;
   font-style: italic;
 }
-
-.img_banner {
-  width: 68vw;
-  height: 65vh;
+.banner .carousel .carousel-inner .carousel-item .img_banner1 {
+  width: 68%;
+  height: 65%;
   flex-direction: column;
+}
+.banner .carousel .carousel-inner .carousel-item .img_banner2 {
+  width: 68%;
+  height: 65%;
+  flex-direction: column;
+  background-color: aqua;
+}
+.banner .carousel .carousel-inner .carousel-item .img_banner2 .map_img1 .imgarea1 {
+  background-color: aquamarine;
 }
 
 /* ESTILOS NOSOTROS */
@@ -510,40 +562,48 @@ main .principal .cuerpo1 .menu1 {
   height: 99.97%;
   background-color: rgb(184, 241, 210);
   justify-content: center;
-  align-items: center;
-  align-content: center;
 }
-main .principal .cuerpo1 .menu1 .button1 {
-  position: relative;
-  border-radius: 10px;
-  height: 10%;
-  width: 80%;
-  margin-left: 13%;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  font-size: 3vh;
-  transition: 0.3s linear;
-  cursor: pointer;
+main .principal .cuerpo1 .menu1 .items {
+  font-size: x-large;
 }
-main .principal .cuerpo1 .menu1 .button1:hover {
+main .principal .cuerpo1 .menu1 .items:hover {
   background-color: forestgreen;
 }
 
-main .principal .cuerpo1 .visorpdf {
+.accordion-body {
   width: 100%;
-  height: 100%;
-  background-color: rgb(184, 241, 210);
+  height: 300%;
 }
-main .principal .cuerpo1 .visorpdf .iframe_visor {
+.accordion-body #iframe_visor {
   width: 100%;
-  height: 100%;
+  height: 50vh;
   background-color: rgb(184, 241, 210);
   font-style: italic;
 }
 
 /* ESTILOS PRODUCTOS */
+.items {
+  font-size: x-large;
+}
+
+.img_producto1 {
+  justify-content: center;
+}
+.img_producto1 .img_ahorros {
+  height: 90%;
+  width: 40%;
+}
+.img_producto1 .img_creditos {
+  height: 90%;
+  width: 40%;
+}
+.img_producto1 .img_servicios {
+  height: 100%;
+  width: 30%;
+}
+
 .aportes {
-  width: 100%;
+  width: 90%;
   height: 100%;
   align-content: center;
   text-align: center;
@@ -590,11 +650,11 @@ main .principal .cuerpo1 .visorpdf .iframe_visor {
 }
 
 .creditos {
-  width: 99.97%;
-  height: 99.97%;
-  background-color: rgb(184, 241, 210);
+  width: 90%;
+  height: 100%;
   align-content: center;
   text-align: center;
+  background: linear-gradient(to bottom right, rgb(64, 233, 121), rgb(115, 184, 131));
   color: darkgreen;
 }
 .creditos .descrip1 {
@@ -677,66 +737,230 @@ main .principal .cuerpo1 .visorpdf .iframe_visor {
   cursor: pointer;
 }
 
+/* ESTILOS EVENTOS */
+#body #main .principal .cuerpo3 .menu3 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 30% 40% 30%;
+}
+#body #main .principal .cuerpo3 .menu3 .evento1 {
+  width: 100%;
+  height: 100%;
+  font-size: large;
+  text-align: justify;
+  align-content: center;
+  background-color: rgb(4, 44, 4);
+}
+#body #main .principal .cuerpo3 .menu3 .evento1 .parrafo1 {
+  margin: 3% 3% 3% 3%;
+}
+#body #main .principal .cuerpo3 .menu3 .evento2 {
+  width: 100%;
+  height: 100%;
+  font-size: large;
+  text-align: justify;
+  align-content: center;
+  background-color: rgb(4, 44, 4);
+}
+#body #main .principal .cuerpo3 .menu3 .evento2 .parrafo1 {
+  margin: 3% 3% 3% 3%;
+}
+#body #main .principal .cuerpo3 .menu3 .evento3 {
+  width: 100%;
+  height: 100%;
+  font-size: large;
+  text-align: justify;
+  align-content: center;
+  background-color: rgb(4, 44, 4);
+}
+#body #main .principal .cuerpo3 .menu3 .evento3 .parrafo1 {
+  margin: 3% 3% 3% 3%;
+}
+
+#body #main .principal .cuerpo3 .tl_eventos {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 30% 40% 30%;
+  grid-template-areas: "ftviajes1 ftviajes2 ftviajes3 ftviajes4" "ftcaravana1 ftcaravana2 ftcaravana2 ftcaravana3" "ftevento1 ftevento2 ftevento3 ftevento4";
+}
+#body #main .principal .cuerpo3 .tl_eventos .viajes1 {
+  width: 100%;
+  height: 100%;
+  grid-area: ftviajes1;
+}
+#body #main .principal .cuerpo3 .tl_eventos .viajes1 .img_viajes1 {
+  width: 100%;
+  height: 100%;
+}
+#body #main .principal .cuerpo3 .tl_eventos .viajes2 {
+  width: 100%;
+  height: 100%;
+  grid-area: ftviajes2;
+}
+#body #main .principal .cuerpo3 .tl_eventos .viajes2 .img_viajes2 {
+  width: 100%;
+  height: 100%;
+}
+#body #main .principal .cuerpo3 .tl_eventos .viajes3 {
+  width: 100%;
+  height: 100%;
+  grid-area: ftviajes3;
+}
+#body #main .principal .cuerpo3 .tl_eventos .viajes3 .img_viajes3 {
+  width: 100%;
+  height: 100%;
+}
+#body #main .principal .cuerpo3 .tl_eventos .viajes4 {
+  width: 100%;
+  height: 100%;
+  grid-area: ftviajes4;
+}
+#body #main .principal .cuerpo3 .tl_eventos .viajes4 .img_viajes4 {
+  width: 100%;
+  height: 100%;
+}
+#body #main .principal .cuerpo3 .tl_eventos .caravana1 {
+  width: 100%;
+  height: 100%;
+  grid-area: ftcaravana1;
+}
+#body #main .principal .cuerpo3 .tl_eventos .caravana1 .img_caravana1 {
+  width: 100%;
+  height: 100%;
+}
+#body #main .principal .cuerpo3 .tl_eventos .caravana2 {
+  width: 100%;
+  height: 100%;
+  grid-area: ftcaravana2;
+}
+#body #main .principal .cuerpo3 .tl_eventos .caravana2 .img_caravana2 {
+  width: 100%;
+  height: 100%;
+}
+#body #main .principal .cuerpo3 .tl_eventos .caravana3 {
+  width: 100%;
+  height: 100%;
+  grid-area: ftcaravana3;
+}
+#body #main .principal .cuerpo3 .tl_eventos .caravana3 .img_caravana3 {
+  width: 100%;
+  height: 100%;
+}
+#body #main .principal .cuerpo3 .tl_eventos .ftevento1 {
+  width: 100%;
+  height: 100%;
+  grid-area: ftevento1;
+}
+#body #main .principal .cuerpo3 .tl_eventos .ftevento1 .img_evento1 {
+  width: 100%;
+  height: 100%;
+}
+#body #main .principal .cuerpo3 .tl_eventos .ftevento2 {
+  width: 100%;
+  height: 100%;
+  grid-area: ftevento2;
+}
+#body #main .principal .cuerpo3 .tl_eventos .ftevento2 .img_evento2 {
+  width: 100%;
+  height: 100%;
+}
+#body #main .principal .cuerpo3 .tl_eventos .ftevento3 {
+  width: 100%;
+  height: 100%;
+  grid-area: ftevento3;
+}
+#body #main .principal .cuerpo3 .tl_eventos .ftevento3 .img_evento3 {
+  width: 100%;
+  height: 100%;
+}
+#body #main .principal .cuerpo3 .tl_eventos .ftevento4 {
+  width: 100%;
+  height: 100%;
+  grid-area: ftevento4;
+}
+#body #main .principal .cuerpo3 .tl_eventos .ftevento4 .img_evento4 {
+  width: 100%;
+  height: 100%;
+}
+
 /* ESTILOS CONSULTAS */
-.login {
+#body #main .principal .cuerpo1 .login {
   width: 99.97%;
   height: 99.97%;
-  background-color: rgb(147, 231, 220);
-  display: grid;
-  grid-template-rows: 10% 40% 10% 40%;
+  display: block;
   text-align: center;
-  justify-content: center;
   align-content: center;
+  border-style: double;
+  color: black;
+  font-size: x-large;
+  background-image: url("../images/login.png");
 }
-.login .txt_ingreso {
+#body #main .principal .cuerpo1 .login .ingreso {
+  align-items: center;
+  justify-items: center;
+  margin-left: 25%;
+  width: 50%;
+  background-color: whitesmoke;
+}
+#body #main .principal .cuerpo1 .login .ingreso .txt_ingreso {
   align-items: center;
   align-content: center;
   font-size: x-large;
-  color: black;
 }
-.login .ingreso {
-  height: 100%;
-  background-color: aqua;
-  border-style: double;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  font-size: x-large;
-  color: black;
-}
-.login .ingreso .pssword {
+#body #main .principal .cuerpo1 .login .ingreso .txt_user .pssword {
   height: 50%;
 }
-.login .ingreso .user {
+#body #main .principal .cuerpo1 .login .ingreso .txt_user .user {
   height: 50%;
 }
-.login .txt_consulta {
+#body #main .principal .cuerpo1 .login .ingreso .bt_ingreso {
+  width: 50%;
+  height: 50%;
+  background-color: black;
   align-items: center;
-  align-content: center;
-  font-size: x-large;
-  color: black;
 }
-.login .consulta {
-  border-style: double;
-  align-content: center;
-  justify-content: center;
-  font-size: x-large;
-  color: black;
-}
-.login .button4 {
-  position: relative;
+
+.button4 {
   border-radius: 10px;
   height: 50%;
   width: 80%;
-  margin-left: 13%;
-  margin-top: 3px;
-  margin-bottom: 3px;
+  margin-top: 10%;
   font-size: 22px;
   transition: 0.3s linear;
   cursor: pointer;
 }
-.login .button4:hover {
+
+.button4:hover {
   background-color: forestgreen;
+}
+
+#body #main .principal .cuerpo4 .consulta {
+  width: 99.97%;
+  height: 99.97%;
+  display: block;
+  border-style: double;
+  text-align: center;
+  align-content: center;
+  font-size: x-large;
+  color: black;
+  background-image: url("../images/consulta.png");
+}
+#body #main .principal .cuerpo4 .consulta .grp_consulta {
+  align-items: center;
+  justify-items: center;
+  margin-left: 25%;
+  width: 50%;
+  background-color: whitesmoke;
+}
+#body #main .principal .cuerpo4 .consulta .grp_consulta .txt_consulta {
+  align-items: center;
+  align-content: center;
+  font-size: x-large;
+  color: black;
 }
 
 /*# sourceMappingURL=styles.css.map */

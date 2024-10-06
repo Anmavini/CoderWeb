@@ -1,12 +1,26 @@
-main .principal .cuerpo2 .visorpdf{
-    width:100%;
-    height: 100%;
-    background-color:rgb(104, 136, 173); 
-  
-    .iframe_visor{
-      width: 100% ;
-      height:100%;
-      background-color:rgb(38, 25, 151) ;
-      font-style: italic;
+#body #main .principal .cuerpo4 .consulta{
+  width:99.97%;
+  height: 99.97%;
+  display:block;
+  border-style: double;
+  text-align: center;
+  align-content: center;
+  font-size: x-large;
+  color: black;
+  background-image: url("../images/consulta.png");
+
+  .grp_consulta{
+    align-items: center;
+    justify-items: center;
+    margin-left: 25%;
+    width: 50%;
+    background-color: whitesmoke;
+
+    .txt_consulta{
+      align-items: center;
+      align-content: center;   
+      font-size: x-large;
+      color: black;
     }
   }
+}

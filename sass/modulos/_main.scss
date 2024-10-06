@@ -1,10 +1,10 @@
 /* Parametros Generales de la página */
-body{
+#body{
     width: 100%;
     height: 100%;
     background: linear-gradient(rgb(59, 184, 123),rgb(44, 153, 100));
     
-    main{
+    #main{
         width:100%;
         height: 100%;
 
@@ -35,7 +35,7 @@ body{
                 width:99%;
                 height: 99.97%;
                 display:grid;
-                grid-template-columns: 30% 70%;
+                grid-template-columns: 100%;
                 grid-template-rows: 100%;
                 color: darkseagreen;
                 align-content: center;
@@ -52,17 +52,41 @@ body{
                 align-content: center;
                 margin: 0.5%;
             }
+
+            .cuerpo3{
+                width:99%;
+                height: 99.97%;
+                display:grid;
+                grid-template-columns: 20% 80%; 
+                grid-template-rows: 100%;
+                color: darkseagreen;
+                align-content: center;
+                justify-content: center;
+            }
+            
+            .cuerpo4{
+                width:99%;
+                height: 99.97%;
+                display:grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 100%;
+                color: darkseagreen;
+                align-content: center;
+                margin: 0.5%;
+            }
             
             .productos{
                 width:99%;
                 height: 99.97%;
                 display:grid;
                 grid-template-columns: repeat(3,1fr);
-                grid-template-rows: 100%;
+                grid-template-rows: 20% 80%;
                 color: darkseagreen;
+                text-align: center;
                 align-content: center;
                 justify-content: center;
                 margin: 0.5%;
+                background-color: rgb(167, 240, 167);
             }
         }
     }

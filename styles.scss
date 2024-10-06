@@ -12,8 +12,12 @@
 @import "./sass/pag_quiensomos/_menu.scss";
 @import "./sass/pag_quiensomos/_visor.scss";
 /* ESTILOS PRODUCTOS */
-@import "./sass/pag_productos/aportes.scss";
-@import "./sass/pag_productos/prestamos.scss";
-@import "./sass/pag_productos/servicios.scss";
+@import "./sass/pag_productos/_aportes.scss";
+@import "./sass/pag_productos/_prestamos.scss";
+@import "./sass/pag_productos/_servicios.scss";
+/* ESTILOS EVENTOS */
+@import "./sass/pag_eventos/txteventos.scss";
+@import "./sass/pag_eventos/imgeventos.scss";
 /* ESTILOS CONSULTAS */
-@import "./sass/pag_tussaldos/login";
+@import "./sass/pag_tussaldos/_login.scss";
+@import "./sass/pag_tussaldos/_ecuenta.scss";

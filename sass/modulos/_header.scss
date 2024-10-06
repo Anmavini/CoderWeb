@@ -18,7 +18,7 @@
       display: grid;
       grid-template-columns: 17.5% 17.5% 13% 13% 13% 13% 13%;
       grid-template-rows: 100%;
-      grid-template-areas: "logo logo inicio somos normas productos saldos" ;
+      grid-template-areas: "logo logo inicio somos eventos productos saldos" ;
       align-content: end;
       justify-items: center;
       align-items: center;
@@ -31,8 +31,8 @@
         grid-area: somos;
       }
       
-      .M_Normas{
-        grid-area: normas;
+      .M_eventos{
+        grid-area: eventos;
       }
       
       .M_productos{

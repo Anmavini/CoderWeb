@@ -55,9 +55,9 @@
                             <a class="nav-link  title" href="../pages/productos.html">
                                 <div class="ico"><img src="../icons/productos-sinfondo.png" alt="Icono_Productos"/>Productos</div></a>
                         </li>
-                        <li class="nav-item M_Normas">
-                            <a class="nav-link title" href="../pages/normativa.html">
-                                <div class="ico"><img src="../icons/normas-sinfondo.png" alt="Icono_Normas"/>Normativa</div></a>
+                        <li class="nav-item M_eventos">
+                            <a class="nav-link title" href="../pages/eventos.html">
+                                <div class="ico"><img src="../icons/eventos-sinfondo.png" alt="Icono_eventos"/>Eventos</div></a>
                         </li>
                         <li class="nav-item M_Saldos">
                             <a class="nav-link  title" href="../pages/tussaldos.html">
@@ -76,134 +76,135 @@
             </div>
             <div class="principal">
                 <section class="productos">
-                    <div class="aportes">
-                        <div class="aport1">
-                            <label class="Label1" for="Tp_ahorros">Tipo de Ahorros</label>
-                            <select name="Tp_ahorros">
-                                <option value="">Seleccione el Tipo de Ahorro</option>
-                                <option value="Aporte y horro Permanente">Aportes y Ahorros</option>
-                                <option value="Ahorro Programado">Ahorro Programado</option>
-                                <option value="Ahorro con Destinación">Ahorro con Destinación</option>
-                            </select>                            
-                        </div>
-                        <input class="descrip1 cmptext"  type="text" id="descrip1" name="descrip1" readonly/>
-                        <div class="aport1">
-                            <label class="Label2" for="vrmahorro">Valor Mensual de Ahorro:</label>
-                            <input class="vrmahorro" type="number" id="Cuotaho" name="Cuotaho" placeholder=""/>
-                        </div>   
-                        <div class="aport1">
-                            <label class="Label2" for="tasahomes">Tasa Rendimiento Mensual:</label>
-                            <input class="tasahomes cmptext" type="number" id="Tasaho" name="Tasaho" readonly/>
-                        </div>
-                        <div class="aport1">
-                            <form action=""></form>
-                                <button class="button2">Proyectar</button>
-                                <h5>Esta proyección se genera en PDF.</h5>
-                            </form>                            
-                        </div>
-                        <div class="aport1">
-                            <label class="Label1" for="form_ahorros">Descargar Formatos</label>
-                            <select name="form_ahorros">
-                                <option value="">Seleccione el Formato de Ahorro</option>
-                                <option value="Solicitud Aporte y horro Permanente">Solicitud Aportes y Ahorros</option>
-                                <option value="Solicitud Ahorro Programado">Solicitud Ahorro Programado</option>
-                                <option value="Solicitud Ahorro con Destinación">Solicitud Ahorro con Destinación</option>
-                            </select>                            
-                            <form action=""></form>
-                                <button class="button2">Descargar</button>
-                            </form>
+                    <div class="img_producto1">
+                        <img class="img_ahorros" src="../images/ahorros.png" alt="img_ahorros"/>
+                    </div>
+                    <div class="img_producto1">
+                        <img class="img_creditos" src="../images/creditos.png" alt="img_creditos"/>
+                    </div>
+                    <div class="img_producto1">
+                        <img class="img_servicios" src="../images/Servicios.png" alt="img_ahorros"/>
+                    </div>
+                    <div class="accordion" id="accordion2">
+                        <div class="accordion-item">
+                            <h1 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#aportes" aria-expanded="true" aria-controls="aportes">
+                                    - APORTES -
+                                </button>
+                            </h1>
+                            <div id="aportes" class="accordion-collapse collapse show" data-bs-parent="#accordion2">
+                                <div class="accordion-body">
+                                    <strong>APORTES.</strong> En esta área encontrará los tipo de Ahorros y Aportes, y los cuales puedes tener de manera permanente mientras estes afiliado, o los puedes manejar como un ahorro programado anual o un ahorro con Destinación Especifica al tiempo que tu quieres mayor a un año.
+                                    <div class="aportes">
+                                        <div class="aport1">
+                                            <p class="items">
+                                                <strong>TIPOS DE APORTES</strong>
+                                            </p>
+                                            <select name="Tp_ahorros">
+                                                <option value="">Seleccione el Tipo de Ahorro</option>
+                                                <option value="Aporte y horro Permanente">Aportes y Ahorros</option>
+                                                <option value="Ahorro Programado">Ahorro Programado</option>
+                                                <option value="Ahorro con Destinación">Ahorro con Destinación</option>
+                                            </select>                                    
+                                        </div>
+                                        <textarea class="descrip1"  type="text" id="descrip1" name="descrip1" readonly>En este espacio bajo programación se describe el tipo de Ahorro y/o Aporte Seleccionado.</textarea>
+                                        <div class="aport1">
+                                            <div><label class="Label1" for="form_ahorros">Descargar Formatos</label></div>
+                                            <div>
+                                                <div><a href="../documents/Formato_Aportes1.pdf" target="_blank">FORMATO DE SOLICITUD APORTES Y AHORROS</a></div>
+                                                <div><a href="../documents/Formato_Aportes2.pdf" target="_blank">FORMATO DE SOLICITUD AHORRO PROGRAMADO</a></div>
+                                                <div><a href="../documents/Formato_Aportes3.pdf" target="_blank">FORMATO DE SOLICITUD AHORRO CON DESTINACIÓN</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="creditos">
-                        <div class="aport1">
-                            <label class="Label1" for="Tp_creditos">Tipo de Credito</label>
-                            <select name="Tp_creditos">
-                                <option value="">Seleccione el Tipo de Créditos</option>
-                                <option value="Libre Inversión">Libre Inversión</option>
-                                <option value="Educación">Educación</option>
-                                <option value="Emergencias">Emergencias</option>
-                                <option value="Electródomesticos">Electródomesticos</option>
-                                <option value="Impuestos">Impuestos</option>
-                                <option value="Vehiculo">Vehiculo</option>
-                                <option value="Vivienda">Vivienda</option>
-                            </select>
-                        </div>
-                        <input class="descrip1" type="text" id="descrip2" name="descrip2" readonly/>
-                        <div class="aport1">
-                            <label class="Label2" for="vrcredito">Valor del Credito:</label>
-                            <input class="vrcredito" type="number" id="vrcred" name="vrcred"/>
-                        </div>   
-                        <div class="aport1">
-                            <label class="Label2" for="numcuotas">Numero de Cuotas:</label>
-                            <input class="numcuotas" type="number" id="plazo" name="plazo"/>
-                        </div>
-                        <div class="aport1">
-                            <label class="Label2" for="tasaint">Tasa Interes Mensual:</label>
-                            <input class="tasaint" type="number" id="tasam" name="tasam"/>
-                        </div>
-                        <div class="aport1">
-                            <form action=""></form>
-                                <button class="button2">Proyectar</button>
-                                <h5>Esta proyección se genera en PDF.</h5>
-                            </form>                            
-                        </div>
-                        <div class="aport1">
-                            <label class="Label1" for="form_creditos">Descargar Formatos</label>
-                            <select name="form_creditos">
-                                <option value="">Seleccione el Formatos de crédito</option>
-                                <option value="Solicitud de Crédito">Solicitud de Crédito</option>
-                                <option value="Pagaré">Pagaré</option>
-                                <option value="Carta de Instrucciones">Carta de Instrucciones</option>
-                            </select>                            
-                            <form action=""></form>
-                                <button class="button2">Descargar</button>
-                            </form>
+                    <div class="accordion" id="accordion3">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#creditos" aria-expanded="true" aria-controls="creditos">
+                                    - CRÉDITOS -
+                                </button>
+                            </h2>
+                            <div id="creditos" class="accordion-collapse collapse show" data-bs-parent="#accordion3">
+                                <div class="accordion-body">
+                                    <strong>CREDITOS.</strong> En esta área encontrará los tipo de créditos que puede realizar solicitar como afiliado a FONAHFAMI, con comodos plazos y tasas de interes bajas, en busqueda de su bienestar y el de sus familias.
+                                    <div class="creditos">
+                                        <div class="aport1">
+                                            <p class="items">
+                                                <strong>TIPOS DE CREDITOS</strong>
+                                            </p>
+                                            <select name="Tp_creditos">
+                                                <option value="">Seleccione el Tipo de Créditos</option>
+                                                <option value="Libre Inversión">Libre Inversión</option>
+                                                <option value="Educación">Educación</option>
+                                                <option value="Emergencias">Emergencias</option>
+                                                <option value="Electródomesticos">Electródomesticos</option>
+                                                <option value="Impuestos">Impuestos</option>
+                                                <option value="Vehiculo">Vehiculo</option>
+                                                <option value="Vivienda">Vivienda</option>
+                                            </select>
+                                        </div>
+                                        <textarea class="descrip1"  type="text" id="descrip1" name="descrip1" readonly>En este espacio bajo programación se describe el objeto para el tipo de crédito Seleccionado.</textarea>
+                                        <div class="aport1">
+                                            <label class="Label1" for="form_creditos">Descargar Formatos</label>
+                                            <div>
+                                                <div><a href="../documents/Formato_Creditos1.pdf" target="_blank">FORMATO DE SOLICITUD CREDITOS</a></div>
+                                                <div><a href="../documents/Formato_Creditos2.pdf" target="_blank">FORMATO CARTA DE INSTRUCCIONES</a></div>
+                                                <div><a href="../documents/Formato_Creditos3.pdf" target="_blank">FORMATO PAGARÉ</a></div>
+                                            </div>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="servicios">
-                        <div class="aport1">
-                            <label class="Label1" for="Tp_ahorros">Tipo de Servicios</label>
-                            <select name="Tp_servicios">
-                                <option value="">Seleccione el Tipo de Servicio</option>
-                                <option value="Medicina Prepagada">Medicina Prepagada</option>
-                                <option value="Telefonia Movil">Telefonia Movil</option>
-                                <option value="SOAT-Seguro de Vehiculo">SOAT-Seguro de Vehiculo</option>
-                                <option value="Seguro de Hogar">Seguro de Hogar</option>
-                                <option value="Seguro Funerario">Seguro Funerario</option>
-                            </select>
-                        </div>
-                        <label for="descrip1"></label>
-                        <input class="descrip1" type="text" id="descrip3" name="descrip3" readonly/>
-                        <div class="aport1">
-                            <label class="Label2" for="tp_plan">Plan del Servicio:</label>
-                            <select name="Tp_plan">
-                                <option value="">Seleccione el Tipo de Plan</option>
-                                <option value="Medicina Prepagada">Premium/Diamante</option>
-                                <option value="Telefonia Movil">Medium/Oro</option>
-                                <option value="SOAT-Seguro de Vehiculo">Basic/Plata</option>
-                            </select>
-                        </div>   
-                        <div class="aport1">
-                            <label class="Label2" for="vrcuotasrv">Cuota del Servicio:</label>
-                            <input class="vrcuotasrv" type="number" id="vrcuosrv" name="vrcuosrv" readonly/>
-                        </div>   
-                        <div class="aport1">
-                            <form action=""></form>
-                                <button class="button2">Proyectar</button>
-                                <h5>Esta proyección se genera en PDF.</h5>
-                            </form>                            
-                        </div>
-                        <div class="aport1">
-                            <label class="Label1" for="form_servicios">Descargar Formatos</label>
-                            <select name="form_servicios">
-                                <option value="">Seleccione el Formatos de Servicios</option>
-                                <option value="Solicitud de Servicios">Solicitud de Servicios</option>
-                            </select>                            
-                            <form action=""></form>
-                                <button class="button2">Descargar</button>
-                            </form>
+                    <div class="accordion" id="accordion4">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#servicios" aria-expanded="true" aria-controls="servicios">
+                                    - SERVICIOS -
+                                </button>
+                            </h2>
+                            <div id="servicios" class="accordion-collapse collapse show" data-bs-parent="#accordion4">
+                                <div class="accordion-body">
+                                    <strong>SERVICIOS.</strong> En esta área encontrará los tipo de servicios que puede realizar solicitar como afiliado a FONAHFAMI, con comodos plazos y descuentos en el costo, en búsqueda de su bienestar y el de sus familias.
+                                    <div class="servicios">
+                                        <div class="aport1">
+                                            <p class="items">
+                                                <strong>TIPOS DE SERVICIOS</strong>
+                                            </p>
+                                            <select name="Tp_servicios">
+                                                <option value="">Seleccione el Tipo de Servicio</option>
+                                                <option value="Medicina Prepagada">Medicina Prepagada</option>
+                                                <option value="Telefonia Movil">Telefonia Movil</option>
+                                                <option value="SOAT-Seguro de Vehiculo">SOAT-Seguro de Vehiculo</option>
+                                                <option value="Seguro de Hogar">Seguro de Hogar</option>
+                                                <option value="Seguro Funerario">Seguro Funerario</option>
+                                            </select>
+                                        </div>
+                                        <div class="aport1">
+                                            <label for="Tp_plan"></label>
+                                            <select name="Tp_plan">
+                                                <option value="">Seleccione el Tipo de Plan</option>
+                                                <option value="Alto">Premium/Diamante</option>
+                                                <option value="Medio">Medium/Oro</option>
+                                                <option value="Bajo">Basic/Plata</option>
+                                            </select>
+                                        </div>
+                                        <textarea class="descrip1"  type="text" id="descrip1" name="descrip1" readonly>En este espacio bajo programación se describe el objeto para el tipo de servicio Seleccionado.</textarea>                                          
+                                        <div class="aport1">
+                                            <label class="Label1" for="form_servicios">Descargar Formatos</label>
+                                            <div>
+                                                <div><a href="../documents/Formato_Servicios1.pdf" target="_blank">FORMATO DE SOLICITUD SERVICIOS</a></div>
+                                                <div><a href="" target="_blank">.</a></div>
+                                            </div>     
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -225,7 +226,7 @@
                 </section>    
                 
                 <section class="caja_contacto">
-                    <div class="email"><li><a href="servicioalcliente@fonahfami.com.co">servicioalcliente@fonahfami.com.co</a></li></div>
+                    <div class="email"><a href="servicioalcliente@fonahfami.com.co">servicioalcliente@fonahfami.com.co</a></div>
                     <section class="whatsaap">
                         <div class="ico_whatsaap"><a href="https://web.whatsapp.com/" target="_blank"><img class="img_whatsaap" src="../images/whatsaap-sinfondo.png" alt="img_whatsaap"></a></div>
                         <div class="txt_whatsapp">+57-301-9999999</div>
@@ -243,7 +244,8 @@
                     </section>
                 </section>
                 <section class="caja_derechos">
-                    <div>All right reserved @FONAHFAMI<br>Powered by @ANMAVINI<br>2024</div>
+                    <div>All right reserved @FONAHFAMI</div>
+                    <div>Powered by @ANMAVINI-2024</div>
                 </section>
             </section>
         </footer> 

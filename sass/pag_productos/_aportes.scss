@@ -1,5 +1,26 @@
+.items{
+  font-size: x-large;
+}
+
+.img_producto1{
+  justify-content: center;
+
+  .img_ahorros{
+    height: 90%;
+    width: 40%;
+  }
+  .img_creditos{
+    height: 90%;
+    width: 40%;
+  }
+  .img_servicios{
+    height: 100%;
+    width: 30%;
+  }
+}
+
 .aportes{
-    width:100%;
+    width:90%;
     height: 100%;
     align-content: center;
     text-align: center;

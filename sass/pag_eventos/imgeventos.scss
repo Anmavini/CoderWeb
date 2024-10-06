@@ -1,0 +1,116 @@
+#body{
+    #main{
+        .principal .cuerpo3 .tl_eventos{
+            width:100%;
+            height: 100%;
+            display:grid;
+            grid-template-columns: 25% 25% 25% 25%; 
+            grid-template-rows: 30% 40% 30%;
+            grid-template-areas:
+            "ftviajes1 ftviajes2 ftviajes3 ftviajes4"
+            "ftcaravana1 ftcaravana2 ftcaravana2 ftcaravana3"
+            "ftevento1 ftevento2 ftevento3 ftevento4";
+
+            .viajes1{
+                width:100%;    
+                height: 100%;
+                grid-area: ftviajes1;
+                .img_viajes1{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .viajes2{
+                width:100%;    
+                height: 100%;
+                grid-area: ftviajes2;
+                .img_viajes2{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .viajes3{
+                width:100%;    
+                height: 100%;
+                grid-area: ftviajes3;
+                .img_viajes3{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .viajes4{
+                width:100%;    
+                height: 100%;
+                grid-area: ftviajes4;
+                .img_viajes4{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .caravana1{
+                width:100%;    
+                height: 100%;
+                grid-area: ftcaravana1;
+                .img_caravana1{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .caravana2{
+                width:100%;    
+                height: 100%;
+                grid-area: ftcaravana2;
+                .img_caravana2{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .caravana3{
+                width:100%;    
+                height: 100%;
+                grid-area: ftcaravana3;
+                .img_caravana3{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .ftevento1{
+                width:100%;    
+                height: 100%;
+                grid-area: ftevento1;
+                .img_evento1{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .ftevento2{
+                width:100%;    
+                height: 100%;
+                grid-area: ftevento2;
+                .img_evento2{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .ftevento3{
+                width:100%;    
+                height: 100%;
+                grid-area: ftevento3;
+                .img_evento3{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .ftevento4{
+                width:100%;    
+                height: 100%;
+                grid-area: ftevento4;
+                .img_evento4{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+

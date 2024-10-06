@@ -27,7 +27,6 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
-
         <!-- INCLUSION DE MIS ESTILOS -->
         <link rel="stylesheet" href="./css/styles.css">
         
@@ -58,9 +57,9 @@
                                 <div class="ico"><img src="./icons/productos-sinfondo.png" alt="Icono_Productos"/>Productos</div></a>
                         </li>
 
-                        <li class="nav-item M_Normas">                            
-                            <a class="nav-link title" href="./pages/normativa.html">
-                                <div class="ico"><img src="./icons/normas-sinfondo.png" alt="Icono_Normas"/>Normativa</div></a>
+                        <li class="nav-item M_eventos">                            
+                            <a class="nav-link title" href="./pages/eventos.html">
+                                <div class="ico"><img src="./icons/eventos-sinfondo.png" alt="Icono_eventos"/>Eventos</div></a>
                         </li>
                         <li class="nav-item M_Saldos">
                             <a class="nav-link  title" href="./pages/tussaldos.html">
@@ -78,41 +77,47 @@
                     <section class="hora_col">
                         <iframe class="iframe_horacol" src="https://horalegalnueva.inm.gov.co/widget.html" width="250vw" height="280vh" scrolling="no"></iframe>
                     </section>
-                    <div class="title_interes">SITIOS DE INTERES</div>
-                    <section class="site_interes">
-                        <section class="site_dian">
-                            <li>
-                                <a href="https://www.dian.gov.co/" target="_blank">
-                                    <img class="img_dian" src="./icons/dian.png" alt="img_dian">
-                                </a>
-                            </li>
-                        </section>
-                        <section class="site_super">
-                            <li>
-                                <a href="https://supersolidaria.gov.co/" target="_blank">
-                                    <img class="img_super" src="./icons/supersolidaria.png" alt="img_Supersolidaria">
-                                </a>
-                            </li>
-                        </section>
-                        <section class="site_analfe">
-                            <li>
-                                <a href="https://www.analfe.org.co/" target="_blank">
-                                    <img class="img_analfe" src="./icons/analfe.png" alt="img_analfe">
-                                </a>
-                            </li>
-                        </section>
-                        <section class="site_portafolio">
-                            <li>
-                                <a href="https://www.portafolio.co/" target="_blank">
-                                    <img class="img_portafolio" src="./icons/portafolio.png" alt="img_portafolio">
-                                </a>
-                            </li>
-                        </section>
+
+                    <section class="calendar_col">
+                        <!-- INCLUSION DE LINK Y SCRIPT CALENDARIO COLOMBIA --> 
+                        <link rel="stylesheet" href="https://cdn.calendario-colombia.com/widget_blanco.css">
+                        <script src="https://www.calendario-colombia.com/widget.js"></script>
+                        <iframe class="iframe_calendar_col">
+                            <!-- INCLUSION DE CALENDARIO CALENDARIO COLOMBIA --> 
+                            <a href="https://www.calendario-colombia.com/mes/2024-10" title="Calendario de Octubre de 2024 en Colombia">Octubre 2024</a>
+                        </iframe>
                     </section>
                 </section>
 
                 <section class="banner">
-                    <section><img class="img_banner" src="./images/bienvenida.png" alt="Bienvenidos"/></section>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="map_img1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="map_img2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="map_img3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 img_banner1" src="./images/bienvenida.png" alt="Bienvenidos"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img_banner2" src="./images/deinteres.png" usemap="#map" alt="Entidades de Interes">
+                                <map class="map_img1" name="map">
+                                    <area class="img_area1" shape="rect" coords="100,300,500,380" href="https://www.dian.gov.co/" target="_blank" alt="Enlace Dian">
+                                    <area class="img_area2" shape="rect" coords="630,200,1060,350" href="https://www.analfe.org.co/" target="_blank" alt="Enlace Analfe">
+                                    <area class="img_area3" shape="rect" coords="100,430,500,800" href="https://supersolidaria.gov.co/" target="_blank" alt="Enlace Supersolidaria">
+                                    <area class="img_area4" shape="rect" coords="630,410,1010,500" href="https://www.portafolio.co/" target="_blank" alt="Enlace Portafolio">
+                                </map>
+
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img_banner3" src="./images/productos.png" usemap="#map1" alt="Productos">
+                                <map class="map_img2" name="map1">
+                                    <area class="img_area1" shape="rect" coords="80,200,950,850" href="./pages/productos.html" target="_blank" alt="Productos">
+                                </map>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </section>
         </main>
@@ -150,7 +155,8 @@
                     </section>
                 </section>
                 <section class="caja_derechos">
-                    <div class="txt_derechos">All right reserved @FONAHFAMI<br>Powered by @ANMAVINI<br>2024</div>
+                    <div>All right reserved @FONAHFAMI</div>
+                    <div>Powered by @ANMAVINI-2024</div>
                 </section>
             </section>
         </footer> 
@@ -158,6 +164,7 @@
         <!-- INCLUSION DE SCRIPT BOOTSTRAP -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        
 
     </body>
 </html>

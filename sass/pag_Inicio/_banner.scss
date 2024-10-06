@@ -5,10 +5,23 @@
     align-items:center;
     justify-content:center; 
     font-style: italic;
-  } 
 
-  .img_banner{
-    width: 68vw;
-    height: 65vh;
+ .carousel .carousel-inner .carousel-item .img_banner1{
+    width: 68%;
+    height: 65%;
     flex-direction: column;
   }
+
+  
+  .carousel .carousel-inner .carousel-item .img_banner2{
+    width: 68%;
+    height: 65%;
+    flex-direction: column;
+    background-color: aqua;
+
+    .map_img1 .imgarea1{
+      background-color: aquamarine;
+    }
+  }
+
+} 

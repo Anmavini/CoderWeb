@@ -3,25 +3,13 @@ main .principal .cuerpo1 .menu1{
     height: 99.97%;
     background-color:rgb(184, 241, 210);
     justify-content: center;
-    align-items: center;
-    align-content: center;
-
-    .button1{
-        position: relative;
-        border-radius: 10px;
-        height: 10%;
-        width: 80%;
-        margin-left: 13%;
-        margin-top: 3px;
-        margin-bottom: 3px;
-        font-size: 3vh;
-        transition: .3s linear;
-        cursor: pointer;
+    
+    .items{
+        font-size: x-large;
     }
 
-    .button1:hover{
+    .items:hover{
         background-color: forestgreen;
     }
 
-    
 }
