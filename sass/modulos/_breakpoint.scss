@@ -1,4 +1,10 @@
-@media screen and (max-width:1089px){
+@media screen and (max-width:1320px){
+    #pie_pags .caja_derechos{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1096px){
     
     #Cabecera .navegar .bar_navegar .M_inicio{
         display: none;
@@ -30,8 +36,7 @@
     }
 
     #main .cuerpo .noticias{
-        grid-template-rows: 75% 25%;
-        background-color: blue;
+        grid-template-rows: 50% 50%;
     }
 
     #main .cuerpo .noticias .hora_col .iframe_hora_col{
@@ -39,31 +44,62 @@
         width: 70%;
     }
 
-    #main .cuerpo .noticias .hora_col .title_interes{
-        text-align: center;
-        align-content: center;
-        font-size: small;
-        font-style: italic;
-        background: linear-gradient(to bottom right, rgb(47, 78, 54), rgb(48, 185, 94));
-      }
+    #pie_pags .caja_pie .data_ubicacion{
+        font-size: large;
 
-    #main .cuerpo .noticias .site_interes .site_dian .img_dian{
-        width: 60%;
-        height: 60%;
-    }
-    
-    #main .cuerpo .noticias .site_interes .site_portafolio .img_portafolio{
-        width: 60%;
-        height: 60%;
-    }
+        .txt_ubicacion{
+            font-size: large;
+        }
 
-    #main .cuerpo .noticias .site_interes .site_analfe .img_analfe{
-        width: 50%;
-        height: 50%;
+        .email .txt_email{
+            font-size: large;
+        }
+
+        .ico_whatsaap{
+            font-size: large;
+            .img_whatsaap{
+                height: 80%;
+              }
+        }
     }
 
-    #main .cuerpo .noticias .site_interes .site_super .img_super{
-        width: 30%;
-        height: 30%;
+    #pie_pags .caja_pie .caja_redes{
+        width:100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .title_redes{
+            height: 40%;
+            font-size: large;
+            color:rgb(10, 83, 10);
+        }
+        .icons_redes{
+            height: 60%;
+            align-items: center;
+
+            .img_facebook{
+                height: 40%;
+                width: 60%;
+            }
+            .img_xtwitter{
+                height: 40%;
+                width: 60%;
+            }
+            .img_instagram{
+                height: 40%;
+                width: 60%;
+            }
+        }
     }
-}  
+}
+
+@media screen and (max-width:991px){
+
+    #pie_pags{
+        background-color: darkred;
+        .caja_pie{
+            flex-direction: column;
+        }
+    }
+}

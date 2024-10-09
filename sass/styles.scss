@@ -1,0 +1,23 @@
+/* ESTILOS RESET Y QUERYS */
+@import "./modulos/_reset.scss";
+@import "./modulos/_breakpoint.scss";
+// /* ESTILOS HTML */
+@import "./modulos/_header.scss";
+@import "./modulos/_main.scss";
+@import "./modulos/_footer.scss";
+/* ESTILOS INICIO */
+@import "./pag_inicio/noticias.scss";
+@import "./pag_inicio/_banner.scss";
+/* ESTILOS NOSOTROS */
+@import "./pag_quiensomos/_menu.scss";
+@import "./pag_quiensomos/_visor.scss";
+/* ESTILOS PRODUCTOS */
+@import "./pag_productos/_aportes.scss";
+@import "./pag_productos/_prestamos.scss";
+@import "./pag_productos/_servicios.scss";
+/* ESTILOS EVENTOS */
+@import "./pag_eventos/txteventos.scss";
+@import "./pag_eventos/imgeventos.scss";
+/* ESTILOS CONSULTAS */
+@import "./pag_tussaldos/_login.scss";
+@import "./pag_tussaldos/_ecuenta.scss";
