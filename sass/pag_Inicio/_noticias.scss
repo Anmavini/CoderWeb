@@ -1,126 +1,29 @@
-main{
+#main{
   .cuerpo{
     .noticias{
-      width: 95%;
-      height: 90%;
-      margin: 5%;
+      width: 100%;
+      height: 100%;
       display:grid;
-      grid-template-rows: 50% 10% 40%;
-      background: linear-gradient(to bottom right, rgb(78, 121, 88), rgb(139, 224, 168));
+      grid-template-rows: 60% 40%;
       
-
       .hora_col{
         width: 100%;
-        height: 100%;
-        text-align: center;
+        height: 95%;
+        margin: 1.5% 1.5% 1.5% 0.5%;
         align-content: center;
-        // background-color: rgb(158, 154, 154);
         .iframe_hora_col{
           width: 100%;
-          height: 60%; 
-        }
-      }
-
-        .calendar_col{
-          width: 100%;
-          height: 100%;
-          text-align: center;
-          align-content: center;
-          .iframe_calendar_col{
-            width: 100%;
           height: 100%; 
-          }
         }
-
-      .title_interes{
-        text-align: center;
-        align-content: center;
-        font-size: x-large;
-        font-style: italic;
-        background: linear-gradient(to bottom right, rgb(47, 78, 54), rgb(48, 185, 94));
       }
-
-      .site_interes{
-        width:100% ;
+      .calendar_col{
+        width: 100%;
         height: 100%;
-        display:grid;
-        text-align: center;
-        align-content: center;
-       
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
-        grid-template-areas:
-        "dian portafolio"
-        "analfe supersolidaria";
-        font-family: 'Franklin Gothic Medium';
-              
-        .site_dian{
-          height: 100%;
-          grid-area: dian;
-          text-align: center;
-          align-content: center;
-          .img_dian{
-            width: 70%;
-            height: 70%;
-          }
+        background-color: whitesmoke;
+        .iframe_calendar_col{
+          width: 100%;
+          height: 100%; 
         }
-        
-        .site_super{
-          height: 100%;
-          grid-area: supersolidaria;
-          text-align: center;
-          align-content: center;
-          .img_super{
-            width: 70%;
-            height: 70%;
-          }
-        }
-        
-        .site_analfe{
-          height: 100%;
-          grid-area: analfe;
-          text-align: center;
-          align-content: center;          
-          .img_analfe{  
-            width: 70%;
-            height: 70%;
-          }
-        }
-        
-        .site_portafolio{
-          height: 100%;
-          grid-area: portafolio;
-          text-align: center;
-          align-content: center;          
-          .img_portafolio{
-            width: 70%;
-            height: 70%;
-          }
-        }
-      }
-
-      .img_dian:hover{
-        transform: translatey(-20px);
-        -webkit-transform: translatey(-20px);
-        -moz-transform: translatey(-20px);
-      }
-                  
-      .img_portafolio:hover{
-        transform: translatey(-20px);
-        -webkit-transform: translatey(-20px);
-        -moz-transform: translatey(-20px);
-      }
-
-      .img_analfe:hover{
-        transform: translatey(20px);
-        -webkit-transform: translatey(20px);
-        -moz-transform: translatey(20px);
-      }
-
-      .img_super:hover{
-        transform: translatey(20px);
-        -webkit-transform: translatey(20px);
-        -moz-transform: translatey(20px);
       }
     }
   }

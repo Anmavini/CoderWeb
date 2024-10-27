@@ -1,68 +1,69 @@
-#Cabecera{
-    width: 100%;
-    height: 15vh;
-    padding: 0.3%;
+#body{
+  #Cabecera{
+      width: 100%;
+      height: 15%;
 
-  .navegar{
-    width: 100%;
-    height: 100%;
-    
-
-    .M_logo{
-      grid-area: logo;
-    }
-
-    .bar_navegar{
+    .navegar{
       width: 100%;
       height: 100%;
-      display: grid;
-      grid-template-columns: 17.5% 17.5% 13% 13% 13% 13% 13%;
-      grid-template-rows: 100%;
-      grid-template-areas: "logo logo inicio somos eventos productos saldos" ;
-      align-content: end;
-      justify-items: center;
-      align-items: center;
-    
-      .M_inicio{
-        grid-area: inicio;
+      margin: 0.3%;
+
+      .M_logo{
+        grid-area: logo;
       }
+
+      .bar_navegar{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 17.5% 17.5% 13% 13% 13% 13% 13%;
+        grid-template-rows: 100%;
+        grid-template-areas: "logo logo inicio somos eventos productos saldos" ;
+        align-content: end;
+        justify-items: center;
+        align-items: center;
       
-      .M_Somos{
-        grid-area: somos;
-      }
-      
-      .M_eventos{
-        grid-area: eventos;
-      }
-      
-      .M_productos{
-        grid-area: productos;
-      }
-      
-      .M_Saldos{
-        grid-area: saldos;
+        .M_inicio{
+          grid-area: inicio;
+        }
+        
+        .M_Somos{
+          grid-area: somos;
+        }
+        
+        .M_eventos{
+          grid-area: eventos;
+        }
+        
+        .M_productos{
+          grid-area: productos;
+        }
+        
+        .M_Saldos{
+          grid-area: saldos;
+        }
       }
     }
+  }  
+  
+  .ico{
+    justify-items: center;
+    align-items: center;
   }
-}  
 
-.ico{
-  justify-items: center;
-  align-items: center;
-}
+  .title{
+    font: bold;
+    font-size: x-large;
+    justify-items: center;
+    align-items: center;
+  }
 
-.title{
-  font: bold;
-  font-size: x-large;
-  justify-items: center;
-  align-items: center;
-}
+  .title:hover{
+    padding-top: 5px 10px 5px 10px;
+    border: 1px solid rgba(0,0,0,0.623);
+    border-radius: 10px;
+    background-color: green;
+    color: white;
 
-.title:hover{
-  padding-top: 5px 10px 5px 10px;
-  border: 1px solid rgba(0,0,0,0.623);
-  border-radius: 10px;
-  background-color: green;
-  color: white;
-
+  }
 }

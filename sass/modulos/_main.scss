@@ -1,98 +1,88 @@
-/* Parametros Generales de la página */
-#body{
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgb(59, 184, 123),rgb(44, 153, 100));
-    
-    #main{
-        width:100%;
-        height: 100%;
-
-        /* Parametros - main de la página Inicio*/
-        .cuerpo{
-        width:99.97%;
-        height: 70vh;
-        display:grid;
-        grid-template-columns: 30% 70%;
-        grid-template-rows: 100%;
-        }
-
-        /* Parametros - titulo de la página*/
-        .title_cuerpo{
-            display:flex;
-            height: 5%;
-            font-size: xx-large;
-            text-align: center;
-            align-items:center;
-            justify-content: center;
-        }
-
-        .principal{
-            width:100%;
-            height: 70vh;
-            
-            .cuerpo1{
-                width:99%;
-                height: 99.97%;
-                display:grid;
-                grid-template-columns: 100%;
-                grid-template-rows: 100%;
-                color: darkseagreen;
-                align-content: center;
-                margin: 0.5%;
-            }
-        
-            .cuerpo2{
-                width:99%;
-                height: 99.97%;
-                display:grid;
-                grid-template-columns: 20% 80%;
-                grid-template-rows: 100%;
-                color: darkseagreen;
-                align-content: center;
-                margin: 0.5%;
-            }
-
-            .cuerpo3{
-                width:99%;
-                height: 99.97%;
-                display:grid;
-                grid-template-columns: 20% 80%; 
-                grid-template-rows: 100%;
-                color: darkseagreen;
-                align-content: center;
-                justify-content: center;
-            }
-            
-            .cuerpo4{
-                width:99%;
-                height: 99.97%;
-                display:grid;
-                grid-template-columns: 50% 50%;
-                grid-template-rows: 100%;
-                color: darkseagreen;
-                align-content: center;
-                margin: 0.5%;
-            }
-            
-            .productos{
-                width:99%;
-                height: 99.97%;
-                display:grid;
-                grid-template-columns: repeat(3,1fr);
-                grid-template-rows: 20% 80%;
-                color: darkseagreen;
-                text-align: center;
-                align-content: center;
-                justify-content: center;
-                margin: 0.5%;
-                background-color: rgb(167, 240, 167);
-            }
-        }
-    }
-
-    pie_pags{
+    /* Parametros Generales de la página */
+    #body{
         width: 100%;
-        height: 15%;
+        height: 100%;
+        background: linear-gradient(rgb(3, 100, 52), rgb(166, 216, 191));
+        
+        #main{
+            width:100%;
+            height: 100%;
+            /* Parametros - main de la página Inicio*/
+            .cuerpo{
+            width:100%;
+            height: 100%;
+            display:grid;
+            grid-template-columns: 30% 70%;
+            grid-template-rows: 100%;
+            }
+
+            /* Parametros - titulo de la página*/
+            .title_cuerpo{
+                display:flex;
+                height: 5%;
+                font-size: xx-large;
+                text-align: center;
+                align-items:center;
+                justify-content: center;
+            }
+
+            .principal{
+                width:100%;
+                height: 100%;
+                margin: 0.3%;
+                .cuerpo1{
+                    width:100%;
+                    height: 100%;
+                    display:grid;
+                    grid-template-columns: 100%;
+                    grid-template-rows: 100%;
+                    align-content: center;
+                }
+            
+                .cuerpo2{
+                    width:99%;
+                    height: 99.97%;
+                    display:grid;
+                    grid-template-columns: 20% 80%;
+                    grid-template-rows: 100%;
+                    align-content: center;
+                }
+
+                .cuerpo3{
+                    width:99%;
+                    height: 99.97%;
+                    display:grid;
+                    grid-template-columns: 20% 80%; 
+                    grid-template-rows: 100%;
+                    align-content: center;
+                    justify-content: center;
+                }
+                
+                .cuerpo4{
+                    width:99%;
+                    height: 99.97%;
+                    display:grid;
+                    grid-template-columns: 50% 50%;
+                    grid-template-rows: 100%;
+                    align-content: center;
+                }
+                
+                .productos{
+                    width:99%;
+                    height: 99.97%;
+                    display:grid;
+                    grid-template-columns: repeat(3,1fr);
+                    grid-template-rows: 20% 80%;
+                    color: darkseagreen;
+                    text-align: center;
+                    align-content: center;
+                    justify-content: center;
+                }
+            }
+        }
+
+        pie_pags{
+            width: 100%;
+            height: 100%;
+        }
     }
-}

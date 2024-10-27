@@ -1,10 +1,13 @@
 #pie_pags{
-  width: 99.97%;
+  width: 100%;
   height: 15%;
+  margin: 0.3%;
 
   .caja_pie{
     display:grid;
+    align-items: center;
     align-content: center;
+    justify-items: center;
     justify-content: center;
     background-color:whitesmoke;    
     grid-template-columns: 30% 30% 25% 15%;
@@ -18,16 +21,16 @@
       justify-content: center;
       
       .mapa_ubicacion{
-        height: 90%;
-        width:  90%;
-        align-items: center;
+        height: 100%;
+        width:  100%;
+        margin: 1%;
+        align-content: center;
         justify-items: center;
-        margin-left: 4%;
-        margin-top: 2%;
+
         .iframe_ubicar{
           height: 100%;
           width: 100%;
-          border: 2%;
+          
         }
       }
       .mapa_ubicacion:hover{
