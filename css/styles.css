@@ -12,6 +12,8 @@
   text-decoration: none;
   grid-template-areas: none;
   padding: 0%;
+  margin: 0%;
+  border: 0%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: italic;
 }
@@ -27,101 +29,40 @@ a {
 }
 
 @media screen and (max-width: 1320px) {
-  #pie_pags .caja_derechos {
+  #body #pie_pags .caja_derechos {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 1096px) {
-  #Cabecera .navegar .bar_navegar .M_inicio {
-    display: none;
-  }
-  #Cabecera .navegar .bar_navegar .M_Somos {
-    display: none;
-    justify-items: end;
-    font-size: xx-small;
-  }
-  #Cabecera .navegar .bar_navegar .M_eventos {
-    display: none;
-  }
-  #Cabecera .navegar .bar_navegar .M_productos {
-    display: none;
-  }
-  #Cabecera .navegar .bar_navegar .M_Saldos {
-    display: none;
-  }
-  #main .cuerpo {
-    height: 100%;
-    width: 100%;
-  }
-  #main .cuerpo .noticias {
-    grid-template-rows: 50% 50%;
-  }
-  #main .cuerpo .noticias .hora_col .iframe_hora_col {
-    height: 70%;
-    width: 70%;
-  }
-  #pie_pags .caja_pie .data_ubicacion {
+@media screen and (max-width: 1200px) {
+  #body #pie_pags .caja_pie .data_ubicacion {
     font-size: large;
-  }
-  #pie_pags .caja_pie .data_ubicacion .txt_ubicacion {
-    font-size: large;
-  }
-  #pie_pags .caja_pie .data_ubicacion .email .txt_email {
-    font-size: large;
-  }
-  #pie_pags .caja_pie .data_ubicacion .ico_whatsaap {
-    font-size: large;
-  }
-  #pie_pags .caja_pie .data_ubicacion .ico_whatsaap .img_whatsaap {
-    height: 80%;
-  }
-  #pie_pags .caja_pie .caja_redes {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  #pie_pags .caja_pie .caja_redes .title_redes {
-    height: 40%;
-    font-size: large;
-    color: rgb(10, 83, 10);
-  }
-  #pie_pags .caja_pie .caja_redes .icons_redes {
-    height: 60%;
-    align-items: center;
-  }
-  #pie_pags .caja_pie .caja_redes .icons_redes .img_facebook {
-    height: 40%;
-    width: 60%;
-  }
-  #pie_pags .caja_pie .caja_redes .icons_redes .img_xtwitter {
-    height: 40%;
-    width: 60%;
-  }
-  #pie_pags .caja_pie .caja_redes .icons_redes .img_instagram {
-    height: 40%;
-    width: 60%;
   }
 }
 @media screen and (max-width: 991px) {
+  #body #main {
+    height: 200%;
+  }
   #body #main .cuerpo {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 40% 60%;
-  }
-  #body #main .cuerpo .noticias {
-    width: 100%;
-    display: flex;
-    grid-template-columns: 40% 60%;
     grid-template-rows: 100%;
   }
-  #body #main .cuerpo .banner {
-    width: 100%;
-    height: 100%;
+  #body #main .cuerpo .noticias {
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
   }
   #body #pie_pags .caja_pie {
     grid-template-columns: 100%;
     grid-template-rows: 30% 30% 25% 15%;
+  }
+  #body #pie_pags .caja_pie .caja_ubicacion .mapa_ubicacion {
+    height: 90%;
+    width: 90%;
+    text-align: center;
+  }
+  #body #pie_pags .caja_pie .caja_ubicacion .mapa_ubicacion .iframe_ubicar {
+    height: 90%;
+    width: 90%;
   }
 }
 @media screen and (max-height: 750px) {
@@ -129,63 +70,15 @@ a {
     width: 50%;
     height: 50%;
   }
-  .banner {
-    width: 80%;
-    height: 80%;
-  }
-  .banner .carousel .carousel-inner .carousel-item .img_banner1 {
-    width: 58%;
-    height: 55%;
-    flex-direction: column;
-  }
-  .banner .carousel .carousel-inner .carousel-item .img_banner2 {
-    width: 58%;
-    height: 55%;
-    flex-direction: column;
-  }
-  .banner .carousel .carousel-inner .carousel-item .img_banner3 {
-    width: 58%;
-    height: 55%;
-    flex-direction: column;
-  }
+}
+#body {
+  width: 100%;
+  height: 100%;
 }
 #body #Cabecera {
   width: 100%;
   height: 15%;
-}
-#body #Cabecera .navegar {
-  width: 100%;
-  height: 100%;
-  margin: 0.3%;
-}
-#body #Cabecera .navegar .M_logo {
-  grid-area: logo;
-}
-#body #Cabecera .navegar .bar_navegar {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 17.5% 17.5% 13% 13% 13% 13% 13%;
-  grid-template-rows: 100%;
-  grid-template-areas: "logo logo inicio somos eventos productos saldos";
-  align-content: end;
-  justify-items: center;
-  align-items: center;
-}
-#body #Cabecera .navegar .bar_navegar .M_inicio {
-  grid-area: inicio;
-}
-#body #Cabecera .navegar .bar_navegar .M_Somos {
-  grid-area: somos;
-}
-#body #Cabecera .navegar .bar_navegar .M_eventos {
-  grid-area: eventos;
-}
-#body #Cabecera .navegar .bar_navegar .M_productos {
-  grid-area: productos;
-}
-#body #Cabecera .navegar .bar_navegar .M_Saldos {
-  grid-area: saldos;
+  padding: 1%;
 }
 #body .ico {
   justify-items: center;
@@ -206,11 +99,6 @@ a {
 }
 
 /* Parametros Generales de la página */
-#body {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgb(3, 100, 52), rgb(166, 216, 191));
-}
 #body #main {
   width: 100%;
   height: 100%;
@@ -218,8 +106,7 @@ a {
   /* Parametros - titulo de la página*/
 }
 #body #main .cuerpo {
-  width: 100%;
-  height: 100%;
+  padding: 0.5% 1% 0.5% 1%;
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: 100%;
@@ -463,17 +350,14 @@ a {
   color: rgb(10, 83, 10);
 }
 
-/* ESTILOS INICIO */
 #main .cuerpo .noticias {
-  width: 100%;
-  height: 100%;
   display: grid;
   grid-template-rows: 60% 40%;
 }
 #main .cuerpo .noticias .hora_col {
   width: 100%;
-  height: 95%;
-  margin: 1.5% 1.5% 1.5% 0.5%;
+  height: 100%;
+  margin: 0.5%;
   align-content: center;
 }
 #main .cuerpo .noticias .hora_col .iframe_hora_col {
@@ -490,34 +374,26 @@ a {
   height: 100%;
 }
 
-.banner {
-  display: flex;
-  width: 99.4%;
-  height: 100%;
-  margin: 0.3%;
+#body #main .cuerpo .banner {
   text-align: center;
   align-items: center;
+  align-content: center;
+  justify-content: center;
   font-style: italic;
 }
-.banner .carousel .carousel-inner .carousel-item .img_banner1 {
+#body #main .cuerpo .banner .carousel .carousel-inner .carousel-item .img_banner1 {
   width: 100%;
   height: 100%;
-  flex-direction: column;
 }
-.banner .carousel .carousel-inner .carousel-item .img_banner2 {
+#body #main .cuerpo .banner .carousel .carousel-inner .carousel-item .img_banner2 {
   width: 100%;
   height: 100%;
-  flex-direction: column;
-  background-color: aqua;
 }
-.banner .carousel .carousel-inner .carousel-item .img_banner3 {
+#body #main .cuerpo .banner .carousel .carousel-inner .carousel-item .img_banner3 {
   width: 100%;
   height: 100%;
-  flex-direction: column;
-  background-color: aqua;
 }
 
-/* ESTILOS NOSOTROS */
 main .principal .cuerpo1 .menu1 {
   width: 99.97%;
   height: 99.97%;
@@ -542,7 +418,6 @@ main .principal .cuerpo1 .menu1 .items:hover {
   font-style: italic;
 }
 
-/* ESTILOS PRODUCTOS */
 .items {
   font-size: x-large;
 }
@@ -698,7 +573,6 @@ main .principal .cuerpo1 .menu1 .items:hover {
   cursor: pointer;
 }
 
-/* ESTILOS EVENTOS */
 #body #main .principal .cuerpo3 .menu3 {
   width: 100%;
   height: 100%;
@@ -848,7 +722,6 @@ main .principal .cuerpo1 .menu1 .items:hover {
   height: 100%;
 }
 
-/* ESTILOS CONSULTAS */
 #body #main .principal .cuerpo1 .login {
   width: 99.97%;
   height: 99.97%;
