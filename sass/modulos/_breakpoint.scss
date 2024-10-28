@@ -4,31 +4,121 @@
     }
 }
 
-@media screen and (max-width:1200px){
-    #body #pie_pags .caja_pie .data_ubicacion{
-        font-size: large;
-    }
-}
-
-@media screen and (max-width:991px){
+@media screen and (max-width:1300px){
     #body{
-        #main{
-            height: 200%;
-            .cuerpo{
-                display: grid;
-                grid-template-columns: 100%;
-                grid-template-rows: 100%; 
-                
-                .noticias{
-                    grid-template-rows: 100%;
-                    grid-template-columns: 50% 50%;
+        #main .cuerpo{
+            grid-template-rows: 30% 70%;
+            grid-template-columns: 100%;
+            
+            .noticias{
+                grid-template-rows: 100%;
+                grid-template-columns: 30% 70%;
+                width: 100%;
+                height: 100%;
+                background-color:blue;
+                text-align: center;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                justify-items: center;
+
+                .hora_col .calendar_col{
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    align-items: center;
+                    align-content: center;
+                    justify-content: center;
+                    justify-items: center;
+
                 }
-            } 
+            }
+
+            .banner{
+                width: 100%;
+                height: 100%;
+
+                .carousel{
+                    height: 100%;
+
+                    .carousel-inner{
+                        height: 100%;
+                    }
+                }
+            }
         } 
+
+        #main .principal .productos{
+            grid-template-columns: 100%;
+            grid-template-rows: 3fr;
+
+            .producto1{
+                grid-template-rows: 100%;
+                grid-template-columns: 30% 70%;
+
+                .accordion{
+                    margin: 1%;
+                }
+
+            }
+
+            .producto2{
+                grid-template-rows: 100%;
+                grid-template-columns: 30% 70%;
+
+                .accordion{
+                    margin: 1%;
+                }
+            }
+
+            .producto3{
+                grid-template-rows: 100%;
+                grid-template-columns: 30% 70%;
+
+                .accordion{
+                    margin: 1%;
+                }
+            }
+        }
+
+        #main .principal .cuerpo3 .menu3{
+            width: 100%;
+            height: 100%;
+
+            .evento1{
+                display: grid;
+                grid-template-columns: 25% 25% 25% 25%;
+                grid-template-rows: 50% 50%;
+                grid-template-areas:
+                "txtviajes1 txtviajes1 txtviajes1 txtviajes1"
+                "ftviajes1 ftviajes2 ftviajes3 ftviajes4";
+            }
+
+            .evento2{
+                width: 100%;
+                height: 100%;
+                grid-template-columns: 25% 25% 25% 25%;
+                grid-template-rows: 50% 50%;
+                grid-template-areas:
+                "txtviajes2 txtviajes2 txtviajes2 txtviajes2"
+                "ftcaravana1 ftcaravana2 ftcaravana2 ftcaravana3";
+            }
+
+            .evento3{
+                width: 100%;
+                height: 100%;
+                grid-template-columns: 25% 25% 25% 25%;
+                grid-template-rows: 50% 50%;
+                grid-template-areas:
+                "txtviajes3 txtviajes3 txtviajes3 txtviajes3"
+                "ftevento1 ftevento2 ftevento3 ftevento4";
+            }
+        }
+
         #pie_pags .caja_pie{
             grid-template-columns: 100%;
             grid-template-rows: 30% 30% 25% 15%;
-
+            
             .caja_ubicacion .mapa_ubicacion{
                 height:90%;
                 width: 90%;
@@ -39,20 +129,45 @@
                 }
             }
         }
+
+        #pie_pags .caja_pie .data_ubicacion{
+            font-size: large;
+        }
     }
 }
 
-@media screen and (max-height:750px){
+@media screen and (max-width:991px){        
     #body{
-        #cabecera{
-            .navbar{
-                .container-fluid{               
-                    .navbar-brand{
-                        width: 50%;
-                        height: 50%;
-                    }
-                }
-            } 
-        } 
+        #main .principal .productos{
+            .producto1{
+                grid-template-rows: 30% 70%;
+                grid-template-columns: 100%;
+            }
+
+            .producto2{
+                grid-template-rows: 30% 70%;
+                grid-template-columns: 100%;
+            }
+
+            .producto3{
+                grid-template-rows: 30% 70%;
+                grid-template-columns: 100%;
+            }
+        }
+
+        #main .principal .cuerpo3 .menu3{
+            .evento1{
+                display: flex;
+                flex-direction: column;
+            }
+            .evento2{
+                display: flex;
+                flex-direction: column;
+            }
+            .evento3{
+                display: flex;
+                flex-direction: column;
+            }
+        }        
     }
 }

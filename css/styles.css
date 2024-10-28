@@ -14,6 +14,7 @@
   padding: 0%;
   margin: 0%;
   border: 0%;
+  background-color: none;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: italic;
 }
@@ -33,23 +34,90 @@ a {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 1200px) {
-  #body #pie_pags .caja_pie .data_ubicacion {
-    font-size: large;
-  }
-}
-@media screen and (max-width: 991px) {
-  #body #main {
-    height: 200%;
-  }
+@media screen and (max-width: 1300px) {
   #body #main .cuerpo {
-    display: grid;
+    grid-template-rows: 30% 70%;
     grid-template-columns: 100%;
-    grid-template-rows: 100%;
   }
   #body #main .cuerpo .noticias {
     grid-template-rows: 100%;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+  }
+  #body #main .cuerpo .noticias .hora_col .calendar_col {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+  }
+  #body #main .cuerpo .banner {
+    width: 100%;
+    height: 100%;
+  }
+  #body #main .cuerpo .banner .carousel {
+    height: 100%;
+  }
+  #body #main .cuerpo .banner .carousel .carousel-inner {
+    height: 100%;
+  }
+  #body #main .principal .productos {
+    grid-template-columns: 100%;
+    grid-template-rows: 3fr;
+  }
+  #body #main .principal .productos .producto1 {
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 70%;
+  }
+  #body #main .principal .productos .producto1 .accordion {
+    margin: 1%;
+  }
+  #body #main .principal .productos .producto2 {
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 70%;
+  }
+  #body #main .principal .productos .producto2 .accordion {
+    margin: 1%;
+  }
+  #body #main .principal .productos .producto3 {
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 70%;
+  }
+  #body #main .principal .productos .producto3 .accordion {
+    margin: 1%;
+  }
+  #body #main .principal .cuerpo3 .menu3 {
+    width: 100%;
+    height: 100%;
+  }
+  #body #main .principal .cuerpo3 .menu3 .evento1 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "txtviajes1 txtviajes1 txtviajes1 txtviajes1" "ftviajes1 ftviajes2 ftviajes3 ftviajes4";
+  }
+  #body #main .principal .cuerpo3 .menu3 .evento2 {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "txtviajes2 txtviajes2 txtviajes2 txtviajes2" "ftcaravana1 ftcaravana2 ftcaravana2 ftcaravana3";
+  }
+  #body #main .principal .cuerpo3 .menu3 .evento3 {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "txtviajes3 txtviajes3 txtviajes3 txtviajes3" "ftevento1 ftevento2 ftevento3 ftevento4";
   }
   #body #pie_pags .caja_pie {
     grid-template-columns: 100%;
@@ -64,11 +132,34 @@ a {
     height: 90%;
     width: 90%;
   }
+  #body #pie_pags .caja_pie .data_ubicacion {
+    font-size: large;
+  }
 }
-@media screen and (max-height: 750px) {
-  #body #cabecera .navbar .container-fluid .navbar-brand {
-    width: 50%;
-    height: 50%;
+@media screen and (max-width: 991px) {
+  #body #main .principal .productos .producto1 {
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 100%;
+  }
+  #body #main .principal .productos .producto2 {
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 100%;
+  }
+  #body #main .principal .productos .producto3 {
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 100%;
+  }
+  #body #main .principal .cuerpo3 .menu3 .evento1 {
+    display: flex;
+    flex-direction: column;
+  }
+  #body #main .principal .cuerpo3 .menu3 .evento2 {
+    display: flex;
+    flex-direction: column;
+  }
+  #body #main .principal .cuerpo3 .menu3 .evento3 {
+    display: flex;
+    flex-direction: column;
   }
 }
 #body {
@@ -92,26 +183,26 @@ a {
 }
 #body .title:hover {
   padding-top: 5px 10px 5px 10px;
-  border: 1px solid rgba(0, 0, 0, 0.623);
-  border-radius: 10px;
+  border: 1.5px solid rgba(0, 0, 0, 0.623);
+  border-radius: 12px;
   background-color: green;
   color: white;
 }
 
 /* Parametros Generales de la página */
-#body #main {
+#main {
   width: 100%;
-  height: 100%;
+  height: 70%;
   /* Parametros - main de la página Inicio*/
   /* Parametros - titulo de la página*/
 }
-#body #main .cuerpo {
-  padding: 0.5% 1% 0.5% 1%;
+#main .cuerpo {
+  padding: 0% 1% 0% 1%;
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: 100%;
 }
-#body #main .title_cuerpo {
+#main .title_cuerpo {
   display: flex;
   height: 5%;
   font-size: xx-large;
@@ -119,12 +210,12 @@ a {
   align-items: center;
   justify-content: center;
 }
-#body #main .principal {
+#main .principal {
   width: 100%;
   height: 100%;
   margin: 0.3%;
 }
-#body #main .principal .cuerpo1 {
+#main .principal .cuerpo1 {
   width: 100%;
   height: 100%;
   display: grid;
@@ -132,7 +223,7 @@ a {
   grid-template-rows: 100%;
   align-content: center;
 }
-#body #main .principal .cuerpo2 {
+#main .principal .cuerpo2 {
   width: 99%;
   height: 99.97%;
   display: grid;
@@ -140,16 +231,18 @@ a {
   grid-template-rows: 100%;
   align-content: center;
 }
-#body #main .principal .cuerpo3 {
+#main .principal .cuerpo3 {
   width: 99%;
   height: 99.97%;
-  display: grid;
-  grid-template-columns: 20% 80%;
-  grid-template-rows: 100%;
   align-content: center;
   justify-content: center;
 }
-#body #main .principal .cuerpo4 {
+#main .principal .cuerpo3 .menu3 {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 3fx;
+}
+#main .principal .cuerpo4 {
   width: 99%;
   height: 99.97%;
   display: grid;
@@ -157,18 +250,19 @@ a {
   grid-template-rows: 100%;
   align-content: center;
 }
-#body #main .principal .productos {
+#main .principal .productos {
   width: 99%;
   height: 99.97%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 20% 80%;
+  grid-template-rows: 100%;
   color: darkseagreen;
   text-align: center;
   align-content: center;
   justify-content: center;
 }
-#body pie_pags {
+
+pie_pags {
   width: 100%;
   height: 100%;
 }
@@ -197,7 +291,7 @@ a {
 #pie_pags .caja_pie .caja_ubicacion .mapa_ubicacion {
   height: 100%;
   width: 100%;
-  margin: 1%;
+  margin: 0.5%;
   align-content: center;
   justify-items: center;
 }
@@ -350,34 +444,47 @@ a {
   color: rgb(10, 83, 10);
 }
 
+#main {
+  width: 100%;
+  height: 100%;
+}
+#main .cuerpo {
+  width: 100%;
+  height: 100%;
+}
 #main .cuerpo .noticias {
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-template-rows: 60% 40%;
+  background-color: black;
+  font-size: medium;
 }
 #main .cuerpo .noticias .hora_col {
   width: 100%;
   height: 100%;
-  margin: 0.5%;
   align-content: center;
 }
 #main .cuerpo .noticias .hora_col .iframe_hora_col {
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
+  font-size: medium;
 }
 #main .cuerpo .noticias .calendar_col {
   width: 100%;
   height: 100%;
+  font-size: medium;
   background-color: whitesmoke;
 }
 #main .cuerpo .noticias .calendar_col .iframe_calendar_col {
   width: 100%;
   height: 100%;
+  font-size: smaller;
 }
 
 #body #main .cuerpo .banner {
   text-align: center;
   align-items: center;
-  align-content: center;
   justify-content: center;
   font-style: italic;
 }
@@ -404,7 +511,7 @@ main .principal .cuerpo1 .menu1 .items {
   font-size: x-large;
 }
 main .principal .cuerpo1 .menu1 .items:hover {
-  background-color: forestgreen;
+  background-color: rgb(21, 97, 21);
 }
 
 .accordion-body {
@@ -414,32 +521,24 @@ main .principal .cuerpo1 .menu1 .items:hover {
 .accordion-body #iframe_visor {
   width: 100%;
   height: 50vh;
-  background-color: rgb(184, 241, 210);
   font-style: italic;
 }
 
-.items {
-  font-size: x-large;
-}
-
-.img_producto1 {
-  justify-content: center;
-}
-.img_producto1 .img_ahorros {
-  height: 90%;
-  width: 40%;
-}
-.img_producto1 .img_creditos {
-  height: 90%;
-  width: 40%;
-}
-.img_producto1 .img_servicios {
+.producto1 {
+  display: grid;
+  grid-template-rows: 30% 70%;
+  width: 100%;
   height: 100%;
-  width: 30%;
+}
+.producto1 .img_producto1 {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
 }
 
 .aportes {
-  width: 90%;
+  width: 100%;
   height: 100%;
   align-content: center;
   text-align: center;
@@ -485,38 +584,50 @@ main .principal .cuerpo1 .menu1 .items:hover {
   background-color: forestgreen;
 }
 
-.creditos {
-  width: 90%;
+.producto2 {
+  display: grid;
+  grid-template-rows: 30% 70%;
+  width: 100%;
+  height: 100%;
+}
+.producto2 .img_producto1 {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+}
+.producto2 .creditos {
+  width: 100%;
   height: 100%;
   align-content: center;
   text-align: center;
   background: linear-gradient(to bottom right, rgb(64, 233, 121), rgb(115, 184, 131));
   color: darkgreen;
 }
-.creditos .descrip1 {
+.producto2 .creditos .descrip1 {
   width: 80%;
   height: 20%;
   background-color: rgb(187, 175, 175);
 }
-.creditos .aport1 {
+.producto2 .creditos .aport1 {
   justify-content: center;
   align-content: center;
   align-items: center;
   height: 10%;
 }
-.creditos .aport1 .Label1 {
+.producto2 .creditos .aport1 .Label1 {
   color: darkgreen;
   font-size: x-large;
 }
-.creditos .aport1 .Label2 {
+.producto2 .creditos .aport1 .Label2 {
   color: rgb(42, 139, 42);
   font-size: large;
 }
-.creditos .aport1 .cmptexto {
+.producto2 .creditos .aport1 .cmptexto {
   width: 30%;
   height: 5%;
 }
-.creditos .aport1 .button2 {
+.producto2 .creditos .aport1 .button2 {
   position: relative;
   border-radius: 10px;
   height: 50%;
@@ -527,6 +638,17 @@ main .principal .cuerpo1 .menu1 .items:hover {
   font-size: 22px;
   transition: 0.3s linear;
   cursor: pointer;
+}
+
+.producto3 {
+  display: grid;
+  grid-template-rows: 30% 70%;
+  width: 100%;
+  height: 100%;
+}
+.producto3 .img_producto1 {
+  justify-content: center;
+  align-content: center;
 }
 
 .servicios {
@@ -574,150 +696,165 @@ main .principal .cuerpo1 .menu1 .items:hover {
 }
 
 #body #main .principal .cuerpo3 .menu3 {
-  width: 100%;
-  height: 100%;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 30% 40% 30%;
+  grid-template-rows: 33%, 34%, 33%;
+  font-size: x-large;
 }
 #body #main .principal .cuerpo3 .menu3 .evento1 {
   width: 100%;
   height: 100%;
-  font-size: large;
-  text-align: justify;
-  align-content: center;
-  background-color: rgb(4, 44, 4);
 }
 #body #main .principal .cuerpo3 .menu3 .evento1 .parrafo1 {
-  margin: 3% 3% 3% 3%;
+  text-align: center;
+  align-content: center;
 }
 #body #main .principal .cuerpo3 .menu3 .evento2 {
   width: 100%;
   height: 100%;
-  font-size: large;
-  text-align: justify;
-  align-content: center;
-  background-color: rgb(4, 44, 4);
 }
-#body #main .principal .cuerpo3 .menu3 .evento2 .parrafo1 {
-  margin: 3% 3% 3% 3%;
+#body #main .principal .cuerpo3 .menu3 .evento2 .parrafo2 {
+  text-align: center;
+  align-content: center;
 }
 #body #main .principal .cuerpo3 .menu3 .evento3 {
   width: 100%;
   height: 100%;
-  font-size: large;
-  text-align: justify;
-  align-content: center;
-  background-color: rgb(4, 44, 4);
 }
-#body #main .principal .cuerpo3 .menu3 .evento3 .parrafo1 {
-  margin: 3% 3% 3% 3%;
+#body #main .principal .cuerpo3 .menu3 .evento3 .parrafo3 {
+  text-align: center;
+  align-content: center;
 }
 
-#body #main .principal .cuerpo3 .tl_eventos {
+#body #main .principal .cuerpo3 .menu3 .evento1 {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 30% 40% 30%;
-  grid-template-areas: "ftviajes1 ftviajes2 ftviajes3 ftviajes4" "ftcaravana1 ftcaravana2 ftcaravana2 ftcaravana3" "ftevento1 ftevento2 ftevento3 ftevento4";
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 100%;
+  grid-template-areas: "txtviajes1 ftviajes1 ftviajes2 ftviajes3 ftviajes4";
 }
-#body #main .principal .cuerpo3 .tl_eventos .viajes1 {
+#body #main .principal .cuerpo3 .menu3 .evento1 .parrafo1 {
+  grid-area: txtviajes1;
+}
+#body #main .principal .cuerpo3 .menu3 .evento1 .viajes1 {
   width: 100%;
   height: 100%;
   grid-area: ftviajes1;
 }
-#body #main .principal .cuerpo3 .tl_eventos .viajes1 .img_viajes1 {
+#body #main .principal .cuerpo3 .menu3 .evento1 .viajes1 .img_viajes1 {
   width: 100%;
   height: 100%;
 }
-#body #main .principal .cuerpo3 .tl_eventos .viajes2 {
+#body #main .principal .cuerpo3 .menu3 .evento1 .viajes2 {
   width: 100%;
   height: 100%;
   grid-area: ftviajes2;
 }
-#body #main .principal .cuerpo3 .tl_eventos .viajes2 .img_viajes2 {
+#body #main .principal .cuerpo3 .menu3 .evento1 .viajes2 .img_viajes2 {
   width: 100%;
   height: 100%;
 }
-#body #main .principal .cuerpo3 .tl_eventos .viajes3 {
+#body #main .principal .cuerpo3 .menu3 .evento1 .viajes3 {
   width: 100%;
   height: 100%;
   grid-area: ftviajes3;
 }
-#body #main .principal .cuerpo3 .tl_eventos .viajes3 .img_viajes3 {
+#body #main .principal .cuerpo3 .menu3 .evento1 .viajes3 .img_viajes3 {
   width: 100%;
   height: 100%;
 }
-#body #main .principal .cuerpo3 .tl_eventos .viajes4 {
+#body #main .principal .cuerpo3 .menu3 .evento1 .viajes4 {
   width: 100%;
   height: 100%;
   grid-area: ftviajes4;
 }
-#body #main .principal .cuerpo3 .tl_eventos .viajes4 .img_viajes4 {
+#body #main .principal .cuerpo3 .menu3 .evento1 .viajes4 .img_viajes4 {
   width: 100%;
   height: 100%;
 }
-#body #main .principal .cuerpo3 .tl_eventos .caravana1 {
+#body #main .principal .cuerpo3 .menu3 .evento2 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 100%;
+  grid-template-areas: "txtviajes2 ftcaravana1 ftcaravana2 ftcaravana2 ftcaravana3";
+}
+#body #main .principal .cuerpo3 .menu3 .evento2 .parrafo2 {
+  grid-area: txtviajes2;
+}
+#body #main .principal .cuerpo3 .menu3 .evento2 .caravana1 {
   width: 100%;
   height: 100%;
   grid-area: ftcaravana1;
 }
-#body #main .principal .cuerpo3 .tl_eventos .caravana1 .img_caravana1 {
+#body #main .principal .cuerpo3 .menu3 .evento2 .caravana1 .img_caravana1 {
   width: 100%;
   height: 100%;
 }
-#body #main .principal .cuerpo3 .tl_eventos .caravana2 {
+#body #main .principal .cuerpo3 .menu3 .evento2 .caravana2 {
   width: 100%;
   height: 100%;
   grid-area: ftcaravana2;
 }
-#body #main .principal .cuerpo3 .tl_eventos .caravana2 .img_caravana2 {
+#body #main .principal .cuerpo3 .menu3 .evento2 .caravana2 .img_caravana2 {
   width: 100%;
   height: 100%;
 }
-#body #main .principal .cuerpo3 .tl_eventos .caravana3 {
+#body #main .principal .cuerpo3 .menu3 .evento2 .caravana3 {
   width: 100%;
   height: 100%;
   grid-area: ftcaravana3;
 }
-#body #main .principal .cuerpo3 .tl_eventos .caravana3 .img_caravana3 {
+#body #main .principal .cuerpo3 .menu3 .evento2 .caravana3 .img_caravana3 {
   width: 100%;
   height: 100%;
 }
-#body #main .principal .cuerpo3 .tl_eventos .ftevento1 {
+#body #main .principal .cuerpo3 .menu3 .evento3 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 100%;
+  grid-template-areas: "txtviajes3 ftevento1 ftevento2 ftevento3 ftevento4";
+}
+#body #main .principal .cuerpo3 .menu3 .evento3 .parrafo3 {
+  grid-area: txtviajes3;
+}
+#body #main .principal .cuerpo3 .menu3 .evento3 .ftevento1 {
   width: 100%;
   height: 100%;
   grid-area: ftevento1;
 }
-#body #main .principal .cuerpo3 .tl_eventos .ftevento1 .img_evento1 {
+#body #main .principal .cuerpo3 .menu3 .evento3 .ftevento1 .img_evento1 {
   width: 100%;
   height: 100%;
 }
-#body #main .principal .cuerpo3 .tl_eventos .ftevento2 {
+#body #main .principal .cuerpo3 .menu3 .evento3 .ftevento2 {
   width: 100%;
   height: 100%;
   grid-area: ftevento2;
 }
-#body #main .principal .cuerpo3 .tl_eventos .ftevento2 .img_evento2 {
+#body #main .principal .cuerpo3 .menu3 .evento3 .ftevento2 .img_evento2 {
   width: 100%;
   height: 100%;
 }
-#body #main .principal .cuerpo3 .tl_eventos .ftevento3 {
+#body #main .principal .cuerpo3 .menu3 .evento3 .ftevento3 {
   width: 100%;
   height: 100%;
   grid-area: ftevento3;
 }
-#body #main .principal .cuerpo3 .tl_eventos .ftevento3 .img_evento3 {
+#body #main .principal .cuerpo3 .menu3 .evento3 .ftevento3 .img_evento3 {
   width: 100%;
   height: 100%;
 }
-#body #main .principal .cuerpo3 .tl_eventos .ftevento4 {
+#body #main .principal .cuerpo3 .menu3 .evento3 .ftevento4 {
   width: 100%;
   height: 100%;
   grid-area: ftevento4;
 }
-#body #main .principal .cuerpo3 .tl_eventos .ftevento4 .img_evento4 {
+#body #main .principal .cuerpo3 .menu3 .evento3 .ftevento4 .img_evento4 {
   width: 100%;
   height: 100%;
 }

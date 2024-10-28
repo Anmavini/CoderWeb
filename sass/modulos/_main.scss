@@ -1,12 +1,11 @@
     /* Parametros Generales de la página */
-    #body{
-        #main{
+          #main{
             width:100%;
-            height: 100%;
+            height: 70%;
             
             /* Parametros - main de la página Inicio*/
             .cuerpo{
-            padding: 0.5% 1% 0.5% 1%;
+            padding: 0% 1% 0% 1%;
             display:grid;
             grid-template-columns: 30% 70%;
             grid-template-rows: 100%;
@@ -47,11 +46,14 @@
                 .cuerpo3{
                     width:99%;
                     height: 99.97%;
-                    display:grid;
-                    grid-template-columns: 20% 80%; 
-                    grid-template-rows: 100%;
                     align-content: center;
                     justify-content: center;
+
+                    .menu3{
+                        display:grid;
+                        grid-template-columns: 100%; 
+                        grid-template-rows: 3fx;
+                    }
                 }
                 
                 .cuerpo4{
@@ -68,7 +70,7 @@
                     height: 99.97%;
                     display:grid;
                     grid-template-columns: repeat(3,1fr);
-                    grid-template-rows: 20% 80%;
+                    grid-template-rows: 100%;
                     color: darkseagreen;
                     text-align: center;
                     align-content: center;
@@ -81,4 +83,3 @@
             width: 100%;
             height: 100%;
         }
-    }
